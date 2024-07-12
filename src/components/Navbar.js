@@ -56,7 +56,7 @@ const Navbar = () => {
                   src='../../images/logo.jpg'
                 />
                 <span className=' text-white md:text-3xl ml-2 font-oswald'>
-                  KICKBOX ŽIRI
+                  KARATE KLUB ŽIRI
                 </span>
               </Link>
             </div>

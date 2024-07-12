@@ -28,7 +28,7 @@ const Trenerji = () => {
               <p className='text-[rgb(228,61,78)] mb-10'>
                 Trener odraslih in mladostnikov
               </p>
-              <p>
+              <p className=' md:text-lg'>
                 Erin je diplomirani violinist. Dodiplomski študij je obiskoval v
                 Londonu na Guildhall School of Music and Drama. Po zaključenem
                 študiju v Londonu se je vrnil v Idrijo in začel aktivno
@@ -52,11 +52,11 @@ const Trenerji = () => {
 
           <div className='flex md:flex-row  flex-col-reverse mt-32 max-w-[60rem]'>
             <div className=' text-white'>
-              <h1 className=' text-2xl  text-right'>Matej Jenko</h1>
+              <h1 className=' text-2xl  text-right'>Benjamin Bajuk</h1>
               <p className='text-[rgb(228,61,78)] mb-10 text-right'>
                 Trener odraslih
               </p>
-              <p>
+              <p className=' md:text-lg'>
                 Od športov ga je najprej pritegnil nogomet, katerega je začel
                 trenirati pri šestih letih. Po treh letih je svoje zanimanje
                 preusmeril v atletiko, kasneje pa ga je povleklo k akrobatiki,
@@ -75,7 +75,7 @@ const Trenerji = () => {
             </div>
             <div className='max-w-80  md:ml-9'>
               <StaticImage
-                src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/maej_djr4th'
+                src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/benjamin_p8erry'
                 alt='erin'
                 className='w-full h-full max-h-80 '
               />

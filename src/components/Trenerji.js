@@ -32,6 +32,33 @@ const Trenerji = () => {
         <div className='flex flex-col text-center justify-center items-center m-10'>
           <Link className='max-w-80' to='/trenerji/'>
             <StaticImage
+              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/nejc2_k2jmjg'
+              alt='erin'
+              className={`w-full h-full max-h-80 hover:opacity-70 transition-opacity duration-300 ease-in-out cursor-pointer ${
+                animate
+                  ? 'animate-fade-down animate-once animate-duration-1000 animate-delay-200'
+                  : ''
+              }`}
+            />
+          </Link>
+
+          <div>
+            <Link
+              className='text-white text-2xl mt-10 hover:text-[rgb(228,61,78)] cursor-pointer'
+              to='/trenerji/'
+            >
+              Jernej Sever
+            </Link>
+            <p className='text-[rgb(228,61,78)]'>
+              Predsednik kluba / trener odraslih skupin
+            </p>
+          </div>
+        </div>
+
+        {/*Trener 2 */}
+        <div className='flex flex-col text-center justify-center items-center m-10'>
+          <Link className='max-w-80' to='/trenerji/'>
+            <StaticImage
               src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/erin_pwgu7l'
               alt='erin'
               className={`w-full h-full max-h-80 hover:opacity-70 transition-opacity duration-300 ease-in-out cursor-pointer ${
@@ -50,16 +77,16 @@ const Trenerji = () => {
               Erin Ćoralić
             </Link>
             <p className='text-[rgb(228,61,78)]'>
-              Trener odraslih in mladostnikov
+              Trener skupin za otroke
             </p>
           </div>
         </div>
 
-        {/*Trener 2 */}
+        {/*Trener 3 */}
         <div className='flex flex-col text-center justify-center items-center m-10'>
           <Link className='max-w-80' to='/trenerji/'>
             <StaticImage
-              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/20240327_180257_qp8yqt'
+              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/benjamin_p8erry'
               alt='erin'
               className={`w-full h-full max-h-80 hover:opacity-70 transition-opacity duration-300 ease-in-out cursor-pointer ${
                 animate
@@ -74,9 +101,9 @@ const Trenerji = () => {
               className='text-white text-2xl mt-10 hover:text-[rgb(228,61,78)] cursor-pointer'
               to='/trenerji/'
             >
-              Matej Jenko
+              Benjamin Bajuk
             </Link>
-            <p className='text-[rgb(228,61,78)]'>Trener odraslih</p>
+            <p className='text-[rgb(228,61,78)]'>Trener odraslih skupin</p>
           </div>
         </div>
       </div>

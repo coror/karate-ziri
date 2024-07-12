@@ -29,7 +29,7 @@ module.exports = {
         tags: true,
         context: true,
         type: 'upload',
-        prefix: `kickbox-ziri-stran/`, // specify the folder
+        prefix: `karate-ziri-stran/`, // specify the folder
       },
     },
   ],

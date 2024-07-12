@@ -16,12 +16,12 @@ const About = () => {
         <div className='flex flex-col items-center justify-center'>
           <div className='mx-2 mb-10  lg:w-1/2'>
             <StaticImage
-              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri-stran/20240327_172117_txogpe'
+              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/karate3_rypc3d'
               alt='erin'
               className='w-full h-full'
             />
           </div>
-          <p className=' lg:w-1/2'>
+          <p className=' lg:w-1/2 md:text-lg'>
             Čeprav so borilne veščine ena izmed najbolj številčnih gibalih
             aktivnosti v svetu, v družbi še vedno obstaja kar precej predsodkov
             do njih. Eden takih razširjenih predsodkov je, da naj bi borilne
@@ -46,12 +46,12 @@ const About = () => {
         <div className='flex flex-col items-center justify-center mt-10'>
           <div className=' mb-10 mx-2 lg:w-1/2'>
             <StaticImage
-              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri-stran/kb5_nlq2cz'
+              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/DG_3124_pgytws'
               alt='erin'
               className='w-full h-full'
             />
           </div>
-          <p className='lg:w-1/2'>
+          <p className='lg:w-1/2 md:text-lg'>
             Zgodovina in naše vsakdanje življenje kažeta na to, da ljudje
             nikakor nismo imuni na agresiven in nasilen način odzivanja. Ne
             glede na to, ali gre za fizičen napad ali pa verbalno poniževanje.

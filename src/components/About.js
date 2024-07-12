@@ -26,7 +26,7 @@ const About = () => {
     >
       <div className='relative max-w-lg md:max-w-none mx-4'>
         <StaticImage
-          src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri-stran/kb2_ojst6i'
+          src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/karatemain_phrrv5'
           alt='erin'
           className='max-w-[40rem] h-auto rounded-sm shadow-lg filter brightness-90 contrast-125'
         />

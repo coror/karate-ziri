@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Header = () => {
   return (
-    <div className='w-auto max-h-screen overflow-hidden relative'>
+    <div className='w-auto max-h-screen lg:h-screen overflow-hidden relative'>
       <div className='absolute md:top-[20%] top-6 right-1/2  -translate-x-1/2 -translate-y-1/2 px-8 text-center text-white animate-fade-left animate-delay-1000 z-10 lg:mx-[170px] '>
         <div>
           <h1 className='text-2xl md:text-5xl font-oswald tracking-wider text-left md:leading-snug'>
@@ -17,8 +17,8 @@ const Header = () => {
       </div>
 
       <StaticImage
-        src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/IMG_20240625_131334_1_z20fjx'
-        alt='KICKBOX ŽIRI'
+        src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/karatemain4_mrsyrh'
+        alt='KARATE ŽIRI'
         className='w-full h-full object-cover'
       />
     </div>

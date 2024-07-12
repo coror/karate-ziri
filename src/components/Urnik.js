@@ -23,52 +23,71 @@ const Urnik = () => {
             </thead>
             <tbody>
               <tr>
-                <td className='p-3 border-2'>17:00</td>
-                <td className='border-2' rowSpan='2'>
-                  Mladostniki
+                <td className='p-3 border-2'>14:00</td>
+                <td className='border-2' rowSpan='1'>
+                  Karate začetna
                 </td>
-                <td className='border-2' rowSpan='2'></td>
-                <td className='border-2' rowSpan='2'>
-                  Mladostniki
+                <td className='border-2' rowSpan='1'></td>
+                <td className='border-2' rowSpan='1'>
+                  Karate začetna
                 </td>
-                <td className='border-2' rowSpan='2'></td>
-                <td className='border-2' rowSpan='2'></td>
+                <td className='border-2' rowSpan='1'></td>
+                <td className='border-2' rowSpan='1'></td>
               </tr>
               <tr>
-                <td className='p-3 border-2'>17:30</td>
+                <td className='p-3 border-2'>15:00</td>
+                <td className='border-2' rowSpan='1'>
+                  Karate nadaljevalna
+                </td>
+                <td className='border-2'></td>
+                <td className='border-2'>Karate nadaljevalna</td>
+                <td className='border-2'></td>
+              </tr>
+              <tr>
+                <td className='p-3 border-2'>16:00</td>
+                <td className='border-2' rowSpan='1'>
+                  Karate tekmovalna
+                </td>
+                <td className='border-2' rowSpan='1'></td>
+                <td className='border-2' rowSpan='1'>
+                  Karate tekmovalna
+                </td>
+                <td className='border-2' rowSpan='1'></td>
+                <td className='border-2' rowSpan='1'></td>
+              </tr>
+              <tr>
+                <td className='p-3 border-2'>17:00</td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
               </tr>
               <tr>
                 <td className='p-3 border-2'>18:00</td>
-                <td className='border-2' rowSpan='3'>
-                  Odrasli nadaljevalna
-                </td>
-                <td className='border-2' rowSpan='3'></td>
-                <td className='border-2' rowSpan='3'>
-                  Odrasli nadaljevalna
-                </td>
-                <td className='border-2' rowSpan='3'></td>
-                <td className='border-2' rowSpan='3'></td>
-              </tr>
-              <tr>
-                <td className='p-3 border-2'>18:30</td>
-              </tr>
-              <tr>
-                <td className='p-3 border-2'>19:00</td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
               </tr>
               <tr>
                 <td className='p-3 border-2'>19:30</td>
-                <td className='border-2' rowSpan='2'>
+                <td className='border-2' rowSpan='1'></td>
+                <td className='border-2' rowSpan='1'>
                   Odrasli začetna
                 </td>
-                <td className='border-2' rowSpan='2'></td>
-                <td className='border-2' rowSpan='2'>
-                  Odrasli začetna
-                </td>
-                <td className='border-2' rowSpan='2'></td>
-                <td className='border-2' rowSpan='2'></td>
+                <td className='border-2' rowSpan='1'></td>
+                <td className='border-2' rowSpan='1'></td>
+                <td className='border-2' rowSpan='1'></td>
               </tr>
               <tr>
                 <td className='p-3 border-2'>20:00</td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
+                <td className='border-2'></td>
+                <td className='border-2'>Odrasli začetna</td>
+                <td className='border-2'></td>
               </tr>
             </tbody>
           </table>
