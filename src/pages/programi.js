@@ -16,7 +16,7 @@ function Programi() {
             zIndex: -1,
           }}
         />
-        <div className='absolute inset-0 bg-[#13182A] opacity-75'></div>
+        <div className='absolute inset-0 bg-[#C5C1C0] opacity-30'></div>
         <div className='text-white flex flex-col items-center justify-center p-8'>
           <div className='relative flex items-center flex-col'>
             <div className='flex flex-col items-center mb-10'>

@@ -234,7 +234,7 @@ const Vpis = () => {
 
   return (
     <Layout>
-      <div className='bg-gradient-to-br from-[#0d0f1a] to-[#111525] font-oswald  text-white px-10 flex flex-col items-center  py-10 md:py-40'>
+      <div className='bg-[#C5C1C0] font-oswald  text-[#0A1612] px-10 flex flex-col items-center  py-10 md:py-40'>
         <form
           className='flex flex-col max-w-[30rem]'
           action='/submit'
@@ -539,7 +539,7 @@ const Vpis = () => {
             )}
           </div>
 
-          <button type='submit' className='hover:text-institute  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider border-2 border-institute px-6`'>
+          <button type='submit' className='hover:bg-institute  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider border-4 border-institute px-6`'>
             PRIJAVA
           </button>
 
