@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='bg-[#0A0D1B] md:flex md:items-center md:min-h-32 md:absolute md:opacity-80 z-50 w-full '>
+    <nav className='bg-[#1A2930] md:flex md:items-center md:min-h-32 md:absolute md:opacity-80 z-50 w-full '>
       <div className='mx-auto px-2 sm:px-6 lg:px-8 '>
         <div className='relative flex h-20 items-center '>
           <div className='absolute inset-y-0 left-0 flex items-center lg:hidden'>
@@ -66,8 +66,8 @@ const Navbar = () => {
                 <Link
                   to='/'
                   className={`${
-                    pathname === '/' ? 'text-[rgb(228,61,78)]' : 'text-white'
-                  }   hover:text-[rgb(228,61,78)] py-2 transition-all duration-300 ease-in-out font-oswald tracking-wider `}
+                    pathname === '/' ? 'text-[#f4ab04]' : 'text-white'
+                  }   hover:text-[#f4ab04] py-2 transition-all duration-300 ease-in-out font-oswald tracking-wider `}
                 >
                   DOMOV
                 </Link>
@@ -75,9 +75,9 @@ const Navbar = () => {
                   to='/programi'
                   className={`${
                     pathname === '/programi/'
-                      ? 'text-[rgb(228,61,78)]'
+                      ? 'text-[#f4ab04]'
                       : 'text-white'
-                  }   hover:text-[rgb(228,61,78)] py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
+                  }   hover:text-[#f4ab04] py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
                 >
                   PROGRAMI
                 </Link>
@@ -85,9 +85,9 @@ const Navbar = () => {
                   to='/galerija'
                   className={`${
                     pathname === '/galerija/'
-                      ? 'text-[rgb(228,61,78)]'
+                      ? 'text-[#f4ab04]'
                       : 'text-white'
-                  }   hover:text-[rgb(228,61,78)]  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
+                  }   hover:text-[#f4ab04]  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
                 >
                   GALERIJA
                 </Link>
@@ -95,9 +95,9 @@ const Navbar = () => {
                   to='/about'
                   className={`${
                     pathname === '/about/'
-                      ? 'text-[rgb(228,61,78)]'
+                      ? 'text-[#f4ab04]'
                       : 'text-white'
-                  }   hover:text-[rgb(228,61,78)]  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
+                  }   hover:text-[#f4ab04]  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
                 >
                   O NAS
                 </Link>
@@ -105,9 +105,9 @@ const Navbar = () => {
                   to='/trenerji'
                   className={`${
                     pathname === '/trenerji/'
-                      ? 'text-[rgb(228,61,78)]'
+                      ? 'text-[#f4ab04]'
                       : 'text-white'
-                  }   hover:text-[rgb(228,61,78)]  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
+                  }   hover:text-[#f4ab04]  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
                 >
                   TRENERJI
                 </Link>
@@ -115,9 +115,9 @@ const Navbar = () => {
                   to='/vpis'
                   className={`${
                     pathname === '/vpis/'
-                      ? 'text-[rgb(228,61,78)]'
+                      ? 'text-[#f4ab04]'
                       : 'text-white'
-                  }   hover:text-[rgb(228,61,78)] px-8  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider border-2 border-[rgb(228,61,78)] `}
+                  }   hover:text-[#f4ab04] px-8  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider border-2 border-[#f4ab04] `}
                 >
                   VPIS
                 </Link>
@@ -133,7 +133,7 @@ const Navbar = () => {
               <Link
                 to='/'
                 className={`${
-                  pathname === '/' ? 'text-[rgb(228,61,78)]' : 'text-white'
+                  pathname === '/' ? 'text-[#f4ab04]' : 'text-white'
                 } block px-3 py-2 rounded-md text-base font-medium`}
               >
                 DOMOV
@@ -142,7 +142,7 @@ const Navbar = () => {
                 to='/programi'
                 className={`${
                   pathname === '/programi/'
-                    ? 'text-[rgb(228,61,78)]'
+                    ? 'text-[#f4ab04]'
                     : 'text-white'
                 } block px-3 py-2 rounded-md text-base font-medium`}
               >
@@ -152,7 +152,7 @@ const Navbar = () => {
                 to='/galerija'
                 className={`${
                   pathname === '/galerija/'
-                    ? 'text-[rgb(228,61,78)]'
+                    ? 'text-[#f4ab04]'
                     : 'text-white'
                 } block px-3 py-2 rounded-md text-base font-medium`}
               >
@@ -162,7 +162,7 @@ const Navbar = () => {
                 to='/about'
                 className={`${
                   pathname === '/about/'
-                    ? 'text-[rgb(228,61,78)]'
+                    ? 'text-[#f4ab04]'
                     : 'text-white'
                 } block px-3 py-2 rounded-md text-base font-medium`}
               >
@@ -172,7 +172,7 @@ const Navbar = () => {
                 to='/trenerji'
                 className={`${
                   pathname === '/trenerji/'
-                    ? 'text-[rgb(228,61,78)]'
+                    ? 'text-[#f4ab04]'
                     : 'text-white'
                 } block px-3 py-2 rounded-md text-base font-medium`}
               >
@@ -181,7 +181,7 @@ const Navbar = () => {
               <Link
                 to='/vpis'
                 className={`${
-                  pathname === '/vpis/' ? 'text-[rgb(228,61,78)]' : 'text-white'
+                  pathname === '/vpis/' ? 'text-[#f4ab04]' : 'text-white'
                 } block px-3 py-2 rounded-md text-base font-medium`}
               >
                 VPIS

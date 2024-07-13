@@ -9,9 +9,10 @@ module.exports = {
       fontFamily: {
         oswald: ['Oswald', 'sans-serif'],
       },
+      colors: {
+        institute: '#f4ab04',
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
+  plugins: [require('tailwindcss-animated')],
 };

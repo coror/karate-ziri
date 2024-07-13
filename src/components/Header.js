@@ -9,7 +9,7 @@ const Header = () => {
           <h1 className='text-2xl md:text-5xl font-oswald tracking-wider text-left md:leading-snug'>
             DOBRODOŠLI NA NAŠI STRANI
           </h1>
-          <div className=' border-b-4 border-[rgb(228,61,78)] w-16 mt-5  animate-fade-left animate-delay-1500'></div>
+          <div className=' border-b-4 border-institute w-16 mt-5  animate-fade-left animate-delay-1500'></div>
           <p className=' text-left text-sm md:text-2xl mt-5  animate-fade-left animate-delay-2000'>
             Vsako veliko potovanje se prične s prvim korakom
           </p>

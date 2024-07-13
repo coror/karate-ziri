@@ -6,12 +6,12 @@ import Seo from '../components/Seo';
 const About = () => {
   return (
     <Layout>
-      <div className='bg-gradient-to-br from-[#0d0f1a] to-[#111525] font-oswald py-10 md:py-40 text-white px-9 '>
+      <div className='bg-[#C5C1C0] font-oswald py-10 md:py-40 text-white px-9 '>
         <div className='flex flex-col items-center justify-center mb-10'>
-          <h1 className='text-3xl font-bold text-center text-white'>
+          <h1 className='text-3xl font-bold text-center text-[#0A1612]'>
             POMEN BORILNIH VEŠČIN
           </h1>
-          <div className='border-b-4 border-[rgb(228,61,78)] w-12 text-center mt-5'></div>
+          <div className='border-b-4 border-institute w-12 text-center mt-5'></div>
         </div>
         <div className='flex flex-col items-center justify-center'>
           <div className='mx-2 mb-10  lg:w-1/2'>
@@ -21,7 +21,7 @@ const About = () => {
               className='w-full h-full'
             />
           </div>
-          <p className=' lg:w-1/2 md:text-lg'>
+          <p className=' lg:w-1/2 md:text-lg text-[#1A2930]'>
             Čeprav so borilne veščine ena izmed najbolj številčnih gibalih
             aktivnosti v svetu, v družbi še vedno obstaja kar precej predsodkov
             do njih. Eden takih razširjenih predsodkov je, da naj bi borilne
@@ -51,7 +51,7 @@ const About = () => {
               className='w-full h-full'
             />
           </div>
-          <p className='lg:w-1/2 md:text-lg'>
+          <p className='lg:w-1/2 md:text-lg text-[#1A2930]'>
             Zgodovina in naše vsakdanje življenje kažeta na to, da ljudje
             nikakor nismo imuni na agresiven in nasilen način odzivanja. Ne
             glede na to, ali gre za fizičen napad ali pa verbalno poniževanje.

@@ -6,12 +6,12 @@ import Seo from '../components/Seo';
 const Trenerji = () => {
   return (
     <Layout>
-      <div className='bg-gradient-to-br from-[#0d0f1a] to-[#111525] font-oswald  2xl:px-[24rem] px-9   py-10 md:py-40'>
+      <div className='bg-[#C5C1C0] font-oswald  2xl:px-[24rem] px-9   py-10 md:py-40'>
         <div className='flex flex-col items-center justify-center mb-10'>
-          <h1 className='text-3xl font-bold text-center text-white'>
+          <h1 className='text-3xl font-bold text-center text-[#0A1612]'>
             TRENERJI
           </h1>
-          <div className='border-b-4 border-[rgb(228,61,78)] w-12 text-center mt-5'></div>
+          <div className='border-b-4 border-institute w-12 text-center mt-5'></div>
         </div>
         <div className='flex flex-col justify-center items-center '>
           {/*Trener 1 */}
@@ -23,9 +23,9 @@ const Trenerji = () => {
                 className='w-full h-full max-h-80 '
               />
             </div>
-            <div className=' text-white'>
+            <div className=' text-[#1A2930]'>
               <h1 className=' text-2xl '>dr. Jernej Sever</h1>
-              <p className='text-[rgb(228,61,78)] mb-10'>
+              <p className='text-[#0A1612] mb-10'>
                 Predsednik klub in trener odraslih skupin
               </p>
               <p className=' md:text-lg'>
@@ -72,9 +72,9 @@ const Trenerji = () => {
                 className='w-full h-full max-h-80 '
               />
             </div>
-            <div className=' text-white'>
+            <div className=' text-[#1A2930]'>
               <h1 className=' text-2xl '>Erin Ćoralić</h1>
-              <p className='text-[rgb(228,61,78)] mb-10'>
+              <p className='text-[#0A1612] mb-10'>
                 Trener otroških in tekmovalnih skupin
               </p>
               <p className=' md:text-lg'>
@@ -107,9 +107,9 @@ const Trenerji = () => {
                 className='w-full h-full max-h-80 '
               />
             </div>
-            <div className=' text-white'>
+            <div className=' text-[#1A2930]'>
               <h1 className=' text-2xl '>Benjamin Bajuk</h1>
-              <p className='text-[rgb(228,61,78)] mb-10'>
+              <p className='text-[#0A1612] mb-10'>
                 Trener odraslih skupin
               </p>
               <p className=' md:text-lg'>

@@ -24,7 +24,7 @@ function Programi() {
                 <h1 className='text-4xl font-extrabold text-center tracking-wide '>
                   KARATE ZA OTROKE IN MLADOSTNIKE
                 </h1>
-                <div className='border-b-4 border-[rgb(228,61,78)] w-16 mt-5'></div>
+                <div className='border-b-4 border-institute w-16 mt-5'></div>
               </div>
               <p className='max-w-[50rem] md:text-lg'>
                 Program je namenjen otrokom od 5.leta dalje. Vsebuje načrten
@@ -124,7 +124,7 @@ function Programi() {
                 <h1 className='text-4xl font-extrabold text-center tracking-wide'>
                   KARATE ZA ODRASLE
                 </h1>
-                <div className='border-b-4 border-[rgb(228,61,78)] w-16 mt-5'></div>
+                <div className='border-b-4 border-institute w-16 mt-5'></div>
               </div>
               <p className='max-w-[50rem] md:text-lg'>
                 V Karate inštitutu organiziramo program, ki je prilagojen za

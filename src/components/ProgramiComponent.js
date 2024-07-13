@@ -34,7 +34,7 @@ const Programi = () => {
         <div className='container mx-auto py-10' ref={ref}>
           <div className='flex flex-col items-center justify-center mb-10'>
             <h1 className='text-3xl font-bold text-center'>PROGRAMI</h1>
-            <div className='border-b-4 border-[rgb(228,61,78)] w-12 text-center mt-5'></div>
+            <div className='border-b-4 border-institute w-12 text-center mt-5'></div>
           </div>
           <div
             className={`flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 ${
@@ -61,7 +61,7 @@ const Programi = () => {
                 >
                   Karate za odrasle 
                 </Link>
-                <p className='text-[rgb(228,61,78)] mb-4 text-center'>
+                <p className='text-institute mb-4 text-center'>
                   18:00 - 19:30 / Jernej Sever & Benjamin Bajuk
                 </p>
                 <p className='text-center'>Nadaljevalna in začetna skupina</p>
@@ -88,7 +88,7 @@ const Programi = () => {
                 >
                   Karate za otroke in mladostnike
                 </Link>
-                <p className='text-[rgb(228,61,78)] mb-4 text-center'>
+                <p className='text-institute mb-4 text-center'>
                   14:00 - 17:00 / Erin Ćoralić
                 </p>
                 <p className=' text-center'>Otroci od 5 let naprej</p>

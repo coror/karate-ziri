@@ -7,7 +7,7 @@ const Urnik = () => {
       <div className='relative z-10'>
         <div className='flex flex-col items-center justify-center mb-10 py-10'>
           <h1 className='text-3xl font-bold text-center text-white'>URNIK</h1>
-          <div className='border-b-4 border-[rgb(228,61,78)] w-12 text-center mt-5'></div>
+          <div className='border-b-4 border-institute w-12 text-center mt-5'></div>
         </div>
         <div className='flex justify-center items-center  text-xs md:text-base'>
           <table className='m-10 border-2 border-collapse'>

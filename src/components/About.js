@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <div
-      className='font-oswald flex flex-col md:flex-row bg-gradient-to-br from-[#0d0f1a] to-[#111525] items-center justify-center p-8'
+      className='font-oswald flex flex-col md:flex-row bg-[#C5C1C0] items-center justify-center p-8'
       ref={ref}
     >
       <div className='relative max-w-lg md:max-w-none mx-4'>
@@ -40,19 +40,19 @@ const About = () => {
         }`}
       >
         <div className='flex flex-col items-left justify-center mb-10 md:w-96'>
-          <h1 className='text-4xl font-extrabold text-center tracking-wide '>
+          <h1 className='text-4xl font-extrabold text-center tracking-wide text-[#0A1612]'>
             POMEN BORILNIH ZNANJ
           </h1>
-          <div className='border-b-4 border-[rgb(228,61,78)] w-16 mt-5'></div>
+          <div className='border-b-4 border-institute w-16 mt-5'></div>
         </div>
-        <div className='flex items-center md:w-96 justify-center text-left mb-5'>
+        <div className='flex items-center md:w-96 justify-center text-left mb-5 text-[#1A2930]'>
           <p className='leading-relaxed text-lg'>
             Na osnovi bogatih izkušenj iz borilnih veščin, znanstvenega
             raziskovanja ter desetletij pedagoškega dela oblikujemo moderne
             vadbene programe.
           </p>
         </div>
-        <div className='flex items-center md:w-96 justify-center text-left text-gray-400 mb-5'>
+        <div className='flex items-center md:w-96 justify-center text-left text-[#1A2930] mb-5'>
           <p className='leading-relaxed text-lg'>
             Čeprav so borilne veščine ena izmed najbolj številčnih gibalih
             aktivnosti v svetu, v družbi še vedno obstaja kar precej predsodkov
@@ -62,7 +62,7 @@ const About = () => {
             izvirajo iz...
             <span className='inline-block'>
               <Link
-                className=' flex text-sm text-[rgb(228,61,78)]  m-2 hover:text-white cursor-pointer transition ease-in-out'
+                className=' flex text-sm text-[#1A2930]  m-2 hover:text-white cursor-pointer transition ease-in-out'
                 to='/about/'
               >
                 PREBERI VEČ

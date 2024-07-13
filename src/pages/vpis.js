@@ -539,7 +539,7 @@ const Vpis = () => {
             )}
           </div>
 
-          <button type='submit' className='hover:text-[rgb(228,61,78)]  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider border-2 border-[rgb(228,61,78)] px-6`'>
+          <button type='submit' className='hover:text-institute  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider border-2 border-institute px-6`'>
             PRIJAVA
           </button>
 
@@ -549,7 +549,7 @@ const Vpis = () => {
             </p>
           )}
           {submissionSuccess && formValid && (
-            <p className='text-green-500 mt-3 text-center'>Prijava uspešna!</p>
+            <p className='text-green-500 mt-3 text-center'>Prijava je bila uspešno poslana!</p>
           )}
         </form>
       </div>

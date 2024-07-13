@@ -19,10 +19,10 @@ const Trenerji = () => {
   }, [inView]);
 
   return (
-    <div className='bg-gradient-to-br from-[#0d0f1a] to-[#111525] font-oswald py-10'>
+    <div className='bg-[#C5C1C0] font-oswald py-10'>
       <div className='flex flex-col items-center justify-center mb-10'>
-        <h1 className='text-3xl font-bold text-center text-white'>TRENERJI</h1>
-        <div className='border-b-4 border-[rgb(228,61,78)] w-12 text-center mt-5'></div>
+        <h1 className='text-3xl font-bold text-center text-[#0A1612]'>TRENERJI</h1>
+        <div className='border-b-4 border-institute w-12 text-center mt-5'></div>
       </div>
       <div
         className='flex flex-col md:flex-row justify-center items-center'
@@ -44,12 +44,12 @@ const Trenerji = () => {
 
           <div>
             <Link
-              className='text-white text-2xl mt-10 hover:text-[rgb(228,61,78)] cursor-pointer'
+              className='text-[#0A1612] text-2xl mt-10 hover:text-[#1A2930] cursor-pointer'
               to='/trenerji/'
             >
               Jernej Sever
             </Link>
-            <p className='text-[rgb(228,61,78)]'>
+            <p className='text-[#1A2930]'>
               Predsednik kluba / trener odraslih skupin
             </p>
           </div>
@@ -71,12 +71,12 @@ const Trenerji = () => {
 
           <div>
             <Link
-              className='text-white text-2xl mt-10 hover:text-[rgb(228,61,78)] cursor-pointer'
+              className='text-[#0A1612] text-2xl mt-10 hover:text-[#1A2930] cursor-pointer'
               to='/trenerji/'
             >
               Erin Ćoralić
             </Link>
-            <p className='text-[rgb(228,61,78)]'>
+            <p className='text-[#1A2930]'>
             Trener otroških in tekmovalnih skupin
             </p>
           </div>
@@ -98,12 +98,12 @@ const Trenerji = () => {
 
           <div>
             <Link
-              className='text-white text-2xl mt-10 hover:text-[rgb(228,61,78)] cursor-pointer'
+              className='text-[#0A1612] text-2xl mt-10 hover:text-[#1A2930] cursor-pointer'
               to='/trenerji/'
             >
               Benjamin Bajuk
             </Link>
-            <p className='text-[rgb(228,61,78)]'>Trener odraslih skupin</p>
+            <p className='text-[#1A2930]'>Trener odraslih skupin</p>
           </div>
         </div>
       </div>
