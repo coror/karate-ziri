@@ -77,7 +77,7 @@ const Trenerji = () => {
               Erin Ćoralić
             </Link>
             <p className='text-[rgb(228,61,78)]'>
-              Trener skupin za otroke
+            Trener otroških in tekmovalnih skupin
             </p>
           </div>
         </div>

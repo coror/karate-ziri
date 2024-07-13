@@ -404,7 +404,7 @@ const Vpis = () => {
               onChange={handleChange}
             />
             <label htmlFor='mladostniki' className='m-1'>
-              Kickbox Mladostniki
+              Karate Mladostniki
             </label>
           </div>
           <div className='mb-3'>
@@ -418,7 +418,7 @@ const Vpis = () => {
               onChange={handleChange}
             />
             <label htmlFor='odrasli' className='m-1'>
-              Kickbox Odrasli
+              Karate Odrasli
             </label>
           </div>
           <div>
