@@ -2,7 +2,7 @@ import * as React from 'react';
 import Layout from '../components/Layout';
 
 import ContactLine from '../components/ContactLine';
-import About from '../components/About';
+import Meaning from '../components/Meaning';
 import ProgramiComponent from '../components/ProgramiComponent';
 import Trenerji from '../components/Trenerji';
 import Urnik from '../components/Urnik';
@@ -11,6 +11,7 @@ import Seo from '../components/Seo'; // Ensure correct import
 import Header from '../components/Header';
 
 import Parse from 'parse';
+import About from '../components/About';
 
 const appId = process.env.GATSBY_APP_PARSE_APPLICATION_ID;
 const jsKey = process.env.GATSBY_APP_PARSE_JAVASCRIPT_KEY;
@@ -28,6 +29,7 @@ export default function Home() {
     <Layout>
       <Header />
       <ContactLine />
+      <Meaning />
       <About />
       <ProgramiComponent />
       <Trenerji />

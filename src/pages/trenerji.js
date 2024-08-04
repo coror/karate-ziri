@@ -2,31 +2,32 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import Seo from '../components/Seo';
+import { Link } from 'gatsby';
 
 const Trenerji = () => {
   return (
     <Layout>
-      <div className='bg-[#C5C1C0] font-oswald  2xl:px-[24rem] px-9   py-10 md:py-40'>
-        <div className='flex flex-col items-center justify-center mb-10'>
-          <h1 className='text-3xl font-bold text-center text-[#0A1612]'>
+      <div className='bg-layout2 font-oswald  2xl:px-[24rem] px-9   py-10 md:py-40'>
+        <div className='flex flex-col items-center justify-center mb-10 pt-8'>
+          <h1 className='text-3xl font-bold text-center text-text1'>
             TRENERJI
           </h1>
-          <div className='border-b-4 border-institute w-12 text-center mt-5'></div>
+          <div className='border-b-4 border-identifier w-12 text-center mt-5'></div>
         </div>
         <div className='flex flex-col justify-center items-center '>
           {/*Trener 1 */}
-          <div className='flex md:flex-row flex-col max-w-[60rem]'>
+          <div className='flex md:flex-row flex-col max-w-[60rem] items-center xl:items-start' id='jernej'>
             <div className='max-w-80 md:mr-9 min-w-80'>
               <StaticImage
-                src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/nejc2_k2jmjg'
-                alt='erin'
-                className='w-full h-full max-h-80 '
+                src='https://res.cloudinary.com/dbssbnuph/image/upload/t_benjamin4/v1720821140/kickbox-ziri/nejc2_k2jmjg.jpg'
+                alt='jernej'
+                className='w-full h-full max-h-80 rounded-full animate-fade-right animate-duration-1000 animate-delay-3000'
               />
             </div>
-            <div className=' text-[#1A2930]'>
+            <div className=' text-layout1    animate-fade-right animate-duration-1000 animate-delay-1000'>
               <h1 className=' text-2xl '>dr. Jernej Sever</h1>
-              <p className='text-[#0A1612] mb-10'>
-                Predsednik klub in trener odraslih skupin
+              <p className='text-text1 mb-10'>
+                Predsednik kluba in trener odraslih skupin
               </p>
               <p className=' md:text-lg'>
                 Jernej Sever je vodja Centra premik v Ljubljani in glavni trener
@@ -64,17 +65,17 @@ const Trenerji = () => {
             </div>
           </div>
 
-          <div className='flex md:flex-row flex-col max-w-[60rem] mt-20'>
-            <div className='max-w-80 md:mr-9'>
+          <div className='flex md:flex-row flex-col max-w-[60rem] mt-20 items-center xl:items-start' id='erin'>
+            <div className='max-w-80 md:mr-9  min-w-80'>
               <StaticImage
                 src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/erin_pwgu7l'
                 alt='erin'
-                className='w-full h-full max-h-80 '
+                className='w-full h-full max-h-80 rounded-full animate-fade-right animate-duration-1000 animate-delay-3000'
               />
             </div>
-            <div className=' text-[#1A2930]'>
+            <div className=' text-layout1    animate-fade-right animate-duration-1000 animate-delay-1000'>
               <h1 className=' text-2xl '>Erin Ćoralić</h1>
-              <p className='text-[#0A1612] mb-10'>
+              <p className='text-text1 mb-10'>
                 Trener otroških in tekmovalnih skupin
               </p>
               <p className=' md:text-lg'>
@@ -99,19 +100,17 @@ const Trenerji = () => {
             </div>
           </div>
 
-          <div className='flex md:flex-row flex-col max-w-[60rem] mt-20'>
+          <div className='flex md:flex-row flex-col max-w-[60rem] mt-20 items-center xl:items-start' id='benjamin'>
             <div className='max-w-80 md:mr-9 min-w-80'>
               <StaticImage
-                src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/benjamin_p8erry'
+                src='https://res.cloudinary.com/dbssbnuph/image/upload/t_benjamin4/v1720820700/kickbox-ziri/benjamin_p8erry.jpg'
                 alt='erin'
-                className='w-full h-full max-h-80 '
+                className='w-full h-full max-h-80 rounded-full animate-fade-right animate-duration-1000 animate-delay-3000'
               />
             </div>
-            <div className=' text-[#1A2930]'>
+            <div className=' text-layout1   animate-fade-right animate-duration-1000 animate-delay-1000'>
               <h1 className=' text-2xl '>Benjamin Bajuk</h1>
-              <p className='text-[#0A1612] mb-10'>
-                Trener odraslih skupin
-              </p>
+              <p className='text-text1 mb-10'>Trener odraslih skupin</p>
               <p className=' md:text-lg'>
                 Delo v klubu: pomočnik trenerja tekmovalnih in rekreativnih
                 skupin Od športov ga je najprej pritegnil nogomet, katerega je
@@ -131,6 +130,14 @@ const Trenerji = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className='text-center mt-14 z-50'>
+          <Link
+            to='/vpis'
+            className='bg-identifier border-identifier border-4 border-inidentifierstitute rounded-sm py-3 px-6 text-xl cursor-pointer hover:text-text1 hover:bg-transparent transition-colors duration-200 ease-in-out'
+          >
+            Pridruži se nam!
+          </Link>
         </div>
       </div>
     </Layout>
