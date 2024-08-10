@@ -22,8 +22,8 @@ function Programi() {
             <div className='flex 2xl:flex-row flex-col'>
               <div className='relative max-w-[60rem] md:mt-10 mb-10'>
                 <StaticImage
-                  src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/7_pu4vbs'
-                  alt='erin'
+                  src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120143/karate-kickbox-ostalo/c9csacfflvwpgpmxugx3.jpg'
+                  alt='prijazna-sola'
                   className='max-w-[60rem] h-auto rounded-sm shadow-lg filter brightness-90 contrast-125  animate-fade-right animate-duration-1000 animate-delay-1500'
                 />
               </div>
@@ -139,8 +139,8 @@ function Programi() {
               <div className='flex 2xl:flex-row flex-col'>
                 <div className='relative max-w-[60rem] md:mt-10 mb-10'>
                   <StaticImage
-                    src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/8_ygqijy'
-                    alt='karate practice'
+                    src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120141/karate-kickbox-ostalo/twu2cwkbmrwl36kqdhu8.jpg'
+                    alt='karate-mladostniki'
                     className='max-w-[60rem] h-auto rounded-sm shadow-lg filter brightness-90 contrast-125  animate-fade-right animate-duration-1000 animate-delay-1500'
                   />
                 </div>
@@ -163,7 +163,7 @@ function Programi() {
                     motiviranje vadečih pri doseganju boljših rezultatov v šoli
                     in pri karateju. Jokerja je mogoče osvojiti z dobrimi
                     ocenami v šoli, dobrimi rezultati na testiranju gibalnih
-                    sposobnosti, s pomočjo na treningih in tekmovanjih
+                    sposobnosti ali s pomočjo na treningih in tekmovanjih
                   </p>
                   <div className='flex flex-col md:flex-row items-center justify-center'>
                     <div className='text-center max-w-[40rem] pt-10'>
@@ -222,7 +222,7 @@ function Programi() {
                         </li>
                         <p className='mb-5 md:text-lg'>
                           Redni treningi karateja zahtevajo disciplino in
-                          vztrajnost. Učijo se postavljati cilje, delati na njih
+                          vztrajnost. Učijo se postavljati cilje, delati na dosegi ciljev
                           in premagovati ovire. To so ključne veščine, ki jim
                           bodo koristile v šoli, doma in v življenju.
                         </p>
@@ -245,7 +245,7 @@ function Programi() {
               <div className='flex 2xl:flex-row flex-col'>
                 <div className='relative max-w-[60rem] md:mt-10 mb-10'>
                   <StaticImage
-                    src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/118-1024x680-2_konzps'
+                    src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723128682/karate-kickbox-ostalo/osjgatd9s3ibq0ec75wq.jpg'
                     alt='karate practice'
                     className='max-w-[60rem] h-auto rounded-sm shadow-lg filter brightness-90 contrast-125  animate-fade-right animate-duration-1000 animate-delay-1500'
                   />
@@ -266,7 +266,7 @@ function Programi() {
                     nam pomagajo pri izboljšanju motorične kontrole nad našim
                     telesom. Na osnovi daljših borbenih zaporedij – kat,
                     izboljšamo našo orientacijo v prostoru. S pomočjo
-                    nekontaktne borbe pa se učimo prepoznavati naše odzivi in
+                    nekontaktne borbe pa se učimo prepoznavati naše odzive ter
                     ohranjati mirnost in osredotočenost tudi v stresnih
                     situacijah. Vadeči lahko opravljajo izpite za pasove in v 5
                     do 6 letih opravijo izpit za črni pas, ki je lahko dodaten

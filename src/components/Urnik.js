@@ -46,13 +46,13 @@ const Urnik = () => {
             </thead>
             <tbody>
               <tr>
-                <td className='p-3 border-2'>14:00</td>
+                <td className='p-3 border-2'>14:15</td>
                 <td
                   className='border-2 bg-[#fda92a] hover:brightness-75 transition-all duration-300 ease-in-out'
                   rowSpan='1'
                 >
                   <p className='font-bold my-2'>Karate začetna</p>
-                  <p className='my-1'>14:00 - 15:00</p>
+                  <p className='my-1'>14:15 - 15:00</p>
                   <p className='text-sm my-2'>Erin Ćoralić</p>
                 </td>
                 <td className='border-2' rowSpan='1'></td>
@@ -61,7 +61,7 @@ const Urnik = () => {
                   rowSpan='1'
                 >
                   <p className='font-bold my-2'>Karate začetna</p>
-                  <p className='my-1'>14:00 - 15:00</p>
+                  <p className='my-1'>14:15 - 15:00</p>
                   <p className='text-sm my-2'>Erin Ćoralić</p>
                 </td>
                 <td className='border-2' rowSpan='1'></td>

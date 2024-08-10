@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const ContactLine = () => {
   return (
-    <div className='flex-col md:flex-row bg-layout1 flex text-text2 py-10 font-oswald'>
+    <div className='flex-col md:flex-row bg-layout1 flex text-text2 py-10 font-oswald space-y-5'>
       {/* Phone */}
       <div className='text-center flex-1 relative' style={{ display: 'grid' }}>
         <StaticImage

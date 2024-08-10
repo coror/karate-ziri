@@ -4,22 +4,22 @@
 
 @keyframes slideInFromLeft {
     from {
-      transform: translateY(-100%); /* Start from the left edge of the viewport */
+      transform: translateX(-100%); /* Start from the left edge of the viewport */
       opacity: 0;
     }
     to {
-      transform: translateY(0); /* End at its final position */
+      transform: translateX(0); /* End at its final position */
       opacity: 1;
     }
   }
   
   @keyframes slideOutToLeft {
     from {
-      transform: translateY(0); /* Start from its final position */
+      transform: translateX(0); /* Start from its final position */
       opacity: 1;
     }
     to {
-      transform: translateY(-100%); /* Move to the left edge of the viewport */
+      transform: translateX(-100%); /* Move to the left edge of the viewport */
       opacity: 0;
     }
   }

@@ -53,7 +53,7 @@ const Meaning = () => {
             <span className='inline-block'>
               <Link
                 className=' flex text-sm hover:text-identifier border-b-2 border-identifier m-2  cursor-pointer transition ease-in-out'
-                to='/about/'
+                to='/o-nas/'
               >
                 PREBERI VEČ
                 <FaArrowDown className='m-1 text-sm ' />
@@ -64,11 +64,11 @@ const Meaning = () => {
       </div>
       <div className='relative max-w-lg md:max-w-none mx-4'>
         <StaticImage
-          src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/1_og982l'
-          alt='erin'
-          className='max-w-[40rem]  max-h-96 h-auto rounded-sm shadow-lg filter brightness-90 contrast-125'
+          src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723119526/karate-ziri-galerija/facd57sd2tpookeqfuq5.jpg'
+          alt='zgodovina-puncke'
+          className='max-w-[40rem]  max-h-96 h-auto shadow-lg filter brightness-90 contrast-125'
         />
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 rounded-lg'></div>
+        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 '></div>
       </div>
     </div>
   );

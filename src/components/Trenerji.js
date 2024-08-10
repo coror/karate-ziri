@@ -32,7 +32,7 @@ const Trenerji = () => {
         <div className='flex flex-col text-center justify-center items-center m-10'>
           <Link className='max-w-80' to='/trenerji/#jernej'>
             <StaticImage
-              src='https://res.cloudinary.com/dbssbnuph/image/upload/t_benjamin4/v1720821140/kickbox-ziri/nejc2_k2jmjg.jpg'
+              src='https://res.cloudinary.com/dbssbnuph/image/upload/t_benjamin4/v1720821140/kickbox-ziri/DSC_1393-Edit_kufse2'
               alt='jernej'
               className={`rounded-full w-full h-full max-h-80 hover:brightness-75 transition-all duration-300 ease-in-out cursor-pointer ${
                 animate
@@ -42,7 +42,7 @@ const Trenerji = () => {
             />
           </Link>
 
-          <div>
+          <div className='mt-1'>
             <Link
               className='text-text1 text-2xl mt-10 hover:text-layout1 cursor-pointer'
               to='/trenerji/#jernej'
@@ -50,7 +50,7 @@ const Trenerji = () => {
               Jernej Sever
             </Link>
             <p className='text-layout1'>
-              Predsednik kluba / trener odraslih skupin
+              Vodja karate instituta / trener odraslih skupin
             </p>
           </div>
         </div>
@@ -59,7 +59,7 @@ const Trenerji = () => {
         <div className='flex flex-col text-center justify-center items-center m-10'>
           <Link className='max-w-80' to='/trenerji/#erin'>
             <StaticImage
-              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/erin_pwgu7l'
+              src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/DSC_1399-Edit_kw7z9t'
               alt='erin'
               className={`rounded-full w-full h-full max-h-80 hover:brightness-75 transition-all duration-300 ease-in-out cursor-pointer ${
                 animate
@@ -69,7 +69,7 @@ const Trenerji = () => {
             />
           </Link>
 
-          <div>
+          <div className='mt-1'>
             <Link
               className='text-text1 text-2xl mt-10 hover:text-layout1 cursor-pointer'
               to='/trenerji/#erin'
@@ -86,7 +86,7 @@ const Trenerji = () => {
         <div className='flex flex-col text-center justify-center items-center m-10 '>
           <Link className='max-w-80' to='/trenerji/#benjamin'>
             <StaticImage
-              src='https://res.cloudinary.com/dbssbnuph/image/upload/t_benjamin4/v1720820700/kickbox-ziri/benjamin_p8erry.jpg'
+              src='https://res.cloudinary.com/dbssbnuph/image/upload/t_benjamin4/v1720820700/kickbox-ziri/DSC_1407-Edit_cefzx1'
               alt='erin'
               className={`rounded-full w-full h-full max-h-80 hover:brightness-75 transition-all duration-300 ease-in-out cursor-pointer ${
                 animate
@@ -96,7 +96,7 @@ const Trenerji = () => {
             />
           </Link>
 
-          <div>
+          <div className='mt-1'>
             <Link
               className='text-text1 text-2xl mt-10 hover:text-layout1 cursor-pointer'
               to='/trenerji/#benjamin'

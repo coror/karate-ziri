@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FaFacebookF, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { Link } from 'gatsby';
 
 const Footer = () => {
   return (
@@ -17,7 +18,11 @@ const Footer = () => {
         </div>
         <div className='flex'>
           <div className=' border-2 rounded-full p-2 mx-2'>
-            <a href='https://www.facebook.com/karateklubziri' target='_blank' rel="noreferrer">
+            <a
+              href='https://www.facebook.com/karateklubziri'
+              target='_blank'
+              rel='noreferrer'
+            >
               <FaFacebookF className='hover:text-identifier cursor-pointer transition ease-in-out' />
             </a>
           </div>
@@ -25,7 +30,7 @@ const Footer = () => {
             <a
               href='https://www.instagram.com/karate_klub_ziri/'
               target='_blank'
-              rel="noreferrer"
+              rel='noreferrer'
             >
               <FaInstagram className='hover:text-identifier cursor-pointer transition ease-in-out' />
             </a>
@@ -33,10 +38,18 @@ const Footer = () => {
         </div>
       </div>
       <div className='m-10 md:m-20 text-center'>
-        <p>Karate klub Kolektor Idrija</p>
-        <p>Mokraška vas 15, Idrija</p>
-        <p>5280 Idrija</p>
-        <p>Id. številka z DDV: 37424386</p>
+        <p>Karate klub Žiri</p>
+        <p>Partizanska cesta 101</p>
+        <p>4226 Žiri</p>
+        <p>Id. številka: 99431238</p>
+        <p className='m-2'>
+          <Link
+            to='/pogoji-uporabe'
+            className='text-identifier hover:underline'
+          >
+            Pogoji uporabe
+          </Link>
+        </p>
       </div>
       <div className='m-10 md:m-20'>
         <p className='flex items-center m-2'>

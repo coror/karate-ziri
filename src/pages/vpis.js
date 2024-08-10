@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Layout from '../components/Layout';
-import Parse from 'parse';
 import Seo from '../components/Seo';
 import ClipLoader from 'react-spinners/ClipLoader';
+import { Link } from 'gatsby';
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phoneRegex = /^\+?[0-9]{7,15}$/;
@@ -23,7 +23,7 @@ const Vpis = () => {
     dovoljenje: [],
     zastopnik: '',
     priporocilo: '',
-    strinjanje: [],
+    strinjanje: false,
   };
 
   const [fields, setFields] = useState(initialFields);
@@ -97,7 +97,12 @@ const Vpis = () => {
     }
     if (name === 'strinjanje') {
       setIsEdit(true);
-      setAgreementValid(fields.strinjanje.length > 0 || checked);
+      setAgreementValid(checked);
+      setFields((prevFields) => ({
+        ...prevFields,
+        [name]: checked, // Directly set the boolean value
+      }));
+      return; // Return early as we don't need to handle checkbox arrays
     }
 
     if (type === 'checkbox' || type === 'radio') {
@@ -115,7 +120,7 @@ const Vpis = () => {
     } else {
       setFields((prevFields) => ({
         ...prevFields,
-        [name]: value,
+        [name]: name === 'strinjanje' ? checked : value,
       }));
     }
   };
@@ -189,15 +194,51 @@ const Vpis = () => {
     console.log('Form Data:', updatedFields);
 
     try {
-      console.log('Sending Data:', { fields: updatedFields });
-      await Parse.Cloud.run('sendEmail', {
-        fields: updatedFields,
+      console.log('Sending Data:', { fields });
+      const url =
+        'https://karatefunctionapp.azurewebsites.net/api/processforminput';
+      const httpMethod = 'POST';
+      const rawBody = {
+        Ime: fields.ime,
+        Priimek: fields.priimek,
+        NaslovBivalisca: fields['naslov-bivalisca'],
+        PostnaSt: fields['postna-st'],
+        Kraj: fields.kraj,
+        DatumRoj: datumRojstvaFormatted,
+        Telefon: fields.telefon,
+        Email: fields.email,
+        Tecaj: `${fields.tecaj[0]}`,
+        Obisk: `${fields.obisk[0]}`,
+        DruClani: fields['druzinski-clani'],
+        Dovoljenje: `${fields.dovoljenje[0]}`,
+        Zastopnik: fields.zastopnik,
+        Priporocilo: fields.priporocilo,
+        Strinjanje: fields.strinjanje,
+      };
+      const body = JSON.stringify(rawBody);
+      const headers = {
+        'x-functions-key':
+          'OnwN6nxhD9p5ZzvQxdwafIeUMMTTjvHZCZtMRykcBrVgAzFuRzCO9w==',
+        'Content-Type': 'application/json',
+      };
+
+      console.log('body:', body);
+
+      const response = await fetch(url, {
+        method: httpMethod,
+        // mode: 'no-cors',
+        headers: headers,
+        body,
       });
-      // alert(result);
+
+      if (response.ok) {
+        setSubmissionSuccess(true); // Set submission success state
+      } else {
+        alert(`Ups, prišlo je do napake:`);
+      }
+
       // Reset fields after successful submission
       setFields(initialFields);
-
-      setSubmissionSuccess(true); // Set submission success state
     } catch (error) {
       console.error('Error sending email:', error.message);
       alert(`Failed to send email: ${error.message}`);
@@ -218,7 +259,7 @@ const Vpis = () => {
     const isCourseValid = fields.tecaj.length > 0;
     const isAttendanceValid = fields.obisk.length > 0;
     const isAllowValid = fields.dovoljenje.length > 0;
-    const isAgreementValid = fields.strinjanje[0] === 'da';
+    const isAgreementValid = fields.strinjanje;
 
     setNameValid(isNameValid);
     setSurnameValid(isSurnameValid);
@@ -231,7 +272,7 @@ const Vpis = () => {
     setCourseValid(isCourseValid);
     setAttendanceValid(isAttendanceValid);
     setAllowValid(isAllowValid);
-    setAgreementValid(isAgreementValid)
+    setAgreementValid(isAgreementValid);
 
     return (
       isNameValid &&
@@ -276,7 +317,7 @@ const Vpis = () => {
             )}
           </div>
 
-          <label htmlFor='priimek' className='mb-1'>
+          <label htmlFor='pr' className='mb-1'>
             PRIIMEK*
           </label>
           <input
@@ -290,7 +331,7 @@ const Vpis = () => {
           />
           <div>
             {!surnameValid && (
-              <p className='text-red-500 mb-5'>Prosim vnesite priimek.</p>
+              <p className='text-red-500 mb-5'>Prosim vnesite pr.</p>
             )}
           </div>
 
@@ -505,8 +546,8 @@ const Vpis = () => {
           ></textarea>
 
           <label htmlFor='zastopnik' className='mb-1'>
-            ZASTOPNIK (če si mladoleten/a, vpiši ime in priimek starša oz.
-            zakonitega zastopnika)
+            ZASTOPNIK (če si mladoleten/a, vpiši ime in pr starša oz. zakonitega
+            zastopnika)
           </label>
           <input
             type='text'
@@ -568,109 +609,38 @@ const Vpis = () => {
             )}
           </div>
 
-          <span htmlFor='strinjanje' className='mb-1'>
-            Karate klub Žiri uporablja aplikacijo Moje spretnosti za vodenje
-            evidenc, obveščanje, zapisovanje rezultatov testiranj in izpitov,
-            objavljanje izobraževalnih vsebin in izdajanje računov. S podpisom
-            tega vpisnega lista se strinjate, da bo administrator v klubu vam
-            ali vašemu varovancu v aplikaciji Moje Spretnosti kreiral
-            uporabniški račun. Z namenom nemotenega delovanje kluba in vodenje
-            načrtovanega vadbeno vzgojnega procesa v Karate klubu Žiri obdeluje
-            naslednje podatke:
-            <ul>
-              <li>
-                Podatke o vašem imenu in priimku ter naslovu zbiramo zaradi
-                priprave pogodbe in izdaje računov;
-              </li>
-              <li>
-                Podatke o vašem imenu in priimku ter naslovu zbiramo zaradi
-                priprave pogodbe in izdaje računov;
-              </li>
-              <li>
-                Podatke o imenu in priimku ter starosti otroka zbiramo zaradi
-                izvedbe programa, razvrščanja v ustrezne skupine;
-              </li>
-              <li>
-                Podatke o telefonski številki zbiramo zaradi možnosti obveščanja
-                o morebitnih odpovedih ali spremembah v zvezi s tečajem iz
-                kakršnihkoli razlogov;
-              </li>
-              <li>
-                Podatke o elektronskem naslovu zbiramo, z namenom kreiranja up.
-                računa v aplikaciji Moje spretnosti, zaradi obveščanja o
-                novostih, posredovanju informacij, obveščanja o spremembah,
-                obveščanju o tekmovanjih in dogodkih na nivoju kluba ali Karate
-                Zveze Slovenije, za obveščanje članov o začetku nove sezone in
-                razporeditvi v nove skupine in obveščanje članov o novih vpisih
-                ob začetku sezone;
-              </li>
-              <li>
-                Podatke o boleznih in posebnih stanjih zbiramo zato, da se lahko
-                trener v primeru zapletov ustrezno odzove;
-              </li>
-              <li>
-                Podatke o ocenah izpitov, rezultate tekmovanj in testiranj,
-                zbiramo z namenom spremljanja in načrtovanja vadbenega procesa.
-                Rezultate s tekmovanj uporabljamo tudi pri prijavi na občinske
-                razpise za sofinanciranje športa ter jih objavljamo v javnih
-                medijih;
-              </li>
-              <li>
-                Podatke o enotni matični številki in številki zdravstvenega
-                zavarovanja zbiramo v primeru registracije naših članov v
-                nacionalno panožno zvezo. Izjavo o varovanju osebnih podatkov v
-                Karate klubu Žiri in pogojih uporabe aplikacije Moje spretnosti
-                si lahko preberete na naši spletni strani 
-                <a
-                  href='https://www.karate-institute.org/izjava-karate-klub-kolektor/'
-                  target='_blank'
-                  rel='noreferrer'
-                  className='text-blue-700'
-                >
-                  Karate Institute
-                </a>
-                . *
-              </li>
-            </ul>
+          <span className='mt-5 mb-1 text-center'>
+            S potrditvijo se strinjate s{' '}
+            <Link to='/pogoji-uporabe/' className='text-blue-600'>
+              pogoji uporabe in varovanjem osebnih podatkov.
+            </Link>
           </span>
-          <div>
+          <div className='text-center mb-1'>
             <input
-              type='radio'
-              id='da'
+              type='checkbox'
+              id='strinjanje'
               name='strinjanje'
-              value='da'
+              value='se-strinjam'
               className='mb-3'
-              checked={fields.strinjanje.includes('da')}
+              checked={fields.strinjanje}
               onChange={handleChange}
             />
-            <label htmlFor='da' className='m-1'>
+            <label htmlFor='se-strinjam' className='m-1'>
               Se strinjam
-            </label>
-          </div>
-          <div className='mb-3'>
-            <input
-              type='radio'
-              id='ne'
-              name='strinjanje'
-              value='ne'
-              className='mb-3'
-              checked={fields.strinjanje.includes('ne')}
-              onChange={handleChange}
-            />
-            <label htmlFor='ne' className='m-1'>
-              Se ne strinjam
             </label>
           </div>
 
           <div>
             {!agreementValid && (
-              <p className='text-red-500 mb-5'>Za upsešno prijavo se je potrebno strinjati.</p>
+              <p className='text-red-500 mb-8 text-center'>
+                Za upsešno prijavo se je potrebno strinjati.
+              </p>
             )}
           </div>
 
           <button
             type='submit'
-            className='mx-auto w-32 bg-identifier border-4 border-identifier rounded-sm py-3 px-6 text-xl cursor-pointer hover:text-text1 hover:bg-transparent transition-colors duration-200 ease-in-out`'
+            className='mx-auto mt-5 w-32 bg-identifier border-4 border-identifier rounded-sm py-3 px-6 text-xl cursor-pointer hover:text-text1 hover:bg-transparent transition-colors duration-200 ease-in-out`'
           >
             {loading ? <ClipLoader size={24} color='#ffffff' /> : 'Prijava'}
           </button>

@@ -35,7 +35,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='bg-layout1 md:flex md:items-center md:min-h-32 md:absolute md:opacity-80 z-50 w-full '>
+    <nav className='bg-layout1 md:flex md:items-center md:min-h-32 md:absolute z-50 w-full '>
       <div className='mx-auto px-2 sm:px-6 lg:px-8 '>
         <div className='relative flex h-20 items-center '>
           <div className='absolute inset-y-0 left-0 flex items-center lg:hidden'>
@@ -66,7 +66,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center mx-auto'>
             <div className=' 2xl:mr-64'>
               <Link
                 className='flex flex-shrink-0 items-center hover:opacity-80 transition-opacity duration-200 ease-in-out mx-20'
@@ -110,9 +110,9 @@ const Navbar = () => {
                   GALERIJA
                 </Link>
                 <Link
-                  to='/about'
+                  to='/o-nas'
                   className={`${
-                    pathname === '/about/' ? 'text-identifier' : 'text-text2'
+                    pathname === '/o-nas/' ? 'text-identifier' : 'text-text2'
                   }   hover:text-identifier  py-2 transition-all duration-300 ease-in-out  font-oswald tracking-wider `}
                 >
                   O NAS
@@ -170,9 +170,9 @@ const Navbar = () => {
                 GALERIJA
               </Link>
               <Link
-                to='/about'
+                to='/o-nas'
                 className={`${
-                  pathname === '/about/' ? 'text-identifier' : 'text-text2'
+                  pathname === '/o-nas/' ? 'text-identifier' : 'text-text2'
                 } block px-3 py-2 rounded-md text-base font-medium`}
               >
                 O NAS

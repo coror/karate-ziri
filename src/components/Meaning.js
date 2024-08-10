@@ -26,11 +26,11 @@ const Meaning = () => {
     >
       <div className='relative max-w-lg md:max-w-none mx-4'>
         <StaticImage
-          src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/karatemain_phrrv5'
+          src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120141/karate-kickbox-ostalo/nutrjdedespbpecg8g3h.jpg'
           alt='erin'
-          className='max-w-[40rem] h-auto rounded-sm shadow-lg filter brightness-90 contrast-125'
+          className='max-w-[40rem] h-auto  shadow-lg filter brightness-90 contrast-125'
         />
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 rounded-lg'></div>
+        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 '></div>
       </div>
       <div
         className={`text-text2 py-10 flex flex-col justify-center items-center px-4 ${
@@ -63,7 +63,7 @@ const Meaning = () => {
             <span className='inline-block'>
               <Link
                 className=' flex text-sm text-text2 hover:text-layout1 border-b-2 border-identifier m-2  cursor-pointer transition ease-in-out'
-                to='/about/#pomen'
+                to='/o-nas/#pomen'
               >
                 PREBERI VEČ
                 <FaArrowDown className='m-1 text-sm ' />
@@ -73,7 +73,7 @@ const Meaning = () => {
         </div>
         <div>
           <p className='text-xl font-bold'>Dr. Jernej Sever</p>
-          <p className='text-xs text-text1'>PREDSEDNIK KLUBA</p>
+          <p className='text-xs text-text1'>VODJA KARATE INSTITUTA</p>
         </div>
       </div>
     </div>

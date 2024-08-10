@@ -20,8 +20,8 @@ const Programi = () => {
 
   return (
     <div className='relative  pt-20'>
-      <StaticImage
-        src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/karatemain5_khqjnj'
+      <img
+        src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120071/karate-kickbox-ostalo/dayq6d0vm8fimofwmgaq.jpg'
         alt='Background'
         placeholder='blurred'
         className='fixed inset-0 w-full h-full object-cover'
@@ -43,12 +43,12 @@ const Programi = () => {
                 : ''
             } `}
           >
-            <div className='bg-text1 shadow-lg max-w-xs m-5'>
+            <div className='bg-layout1 shadow-lg max-w-xs m-5'>
               <Link to='/programi/#otroci'>
                 <div className=' h-56 md:h-64 overflow-hidden'>
                   <StaticImage
-                    src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/karate5_u5rr5y'
-                    alt='Kick Boxing Group'
+                    src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723119535/karate-ziri-galerija/lozhctupaoe2kiem1olv.png'
+                    alt='prijazna'
                     className='w-full h-full hover:opacity-50 transition-opacity duration-300 ease-in-out cursor-pointer max-w-96'
                   />
                 </div>
@@ -62,18 +62,18 @@ const Programi = () => {
                   Prijazna šola karateja
                 </Link>
                 <p className='text-identifier mb-4 text-center'>
-                  14:00 - 16:00 / Erin Ćoralić
+                  14:15 - 16:00 / Erin Ćoralić
                 </p>
                 <p className=' text-center'>Otroci od 5 do 12 let</p>
               </div>
             </div>
 
-            <div className='bg-text1 shadow-lg max-w-xs m-5'>
+            <div className='bg-layout1 shadow-lg max-w-xs m-5'>
               <Link to='/programi/#mladostniki'>
                 <div className=' h-56 md:h-64 overflow-hidden'>
                   <StaticImage
-                    src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/karatemain2_ezn6en'
-                    alt='Kick Boxing Group'
+                    src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723144047/karate-ziri-galerija/ripmx6jdwyjf0oonu1bm.jpg'
+                    alt='mladostniki'
                     className='w-full h-full hover:opacity-50 transition-opacity duration-300 ease-in-out cursor-pointer max-w-96'
                   />
                 </div>
@@ -89,16 +89,16 @@ const Programi = () => {
                 <p className='text-identifier mb-4 text-center'>
                   16:00 - 17:00 / Erin Ćoralić
                 </p>
-                <p className=' text-center'>Otroci od 12 do 16 let</p>
+                <p className=' text-center'>Mladostniki od 12 do 16 let</p>
               </div>
             </div>
 
-            <div className='bg-text1 shadow-lg max-w-xs m-5'>
+            <div className='bg-layout1 shadow-lg max-w-xs m-5'>
               <Link to='/programi/#odrasli'>
                 <div className='w-full h-56 md:h-64 overflow-hidden'>
                   <StaticImage
-                    src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/karate-ziri-stran/118-1024x680-2_konzps'
-                    alt='Traditional Martial Arts'
+                    src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723128682/karate-kickbox-ostalo/osjgatd9s3ibq0ec75wq.jpg'
+                    alt='odrasli'
                     className='w-full h-full hover:opacity-50 transition-opacity duration-500 ease-in-out cursor-pointer max-w-96'
                   />
                 </div>

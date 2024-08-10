@@ -6,14 +6,12 @@ const Seo = ({ title, description, pathname, children }) => {
   const {
     title: defaultTitle,
     description: defaultDescription,
-    image,
     siteUrl,
   } = useSiteMetadata();
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ''}`,
   };
 
@@ -21,7 +19,7 @@ const Seo = ({ title, description, pathname, children }) => {
     <>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
+      <meta name="image" content='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723132669/karate-kickbox-ostalo/jh5smtpg6y1thbufidch.jpg' />
       <link
         rel="icon"
         href={logo}

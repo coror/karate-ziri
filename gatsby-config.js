@@ -26,18 +26,19 @@ module.exports = {
         resourceType: `image`,
         // type: `twitter`,
         maxResults: 50,
-        tags: true,
-        context: true,
+        // tags: true,
+        // context: true,
         type: 'upload',
-        prefix: `karate-ziri-stran/`, // specify the folder
+        prefix: `karate-ziri-galerija/` // specify the folder,
+    
       },
     },
   ],
   siteMetadata: {
-    title: 'Kickbox Žiri',
+    title: 'Karate Žiri',
     description:
-      'Kickbox Žiri ponuja dinamične in zanimive kickboks programe za odrasle in najstnike v Žireh. Naši strokovni trenerji zagotavljajo celovito usposabljanje, ki krepi samozavest, izboljšuje spretnosti samoobrambe in spodbuja zdrav življenjski slog. Pridružite se nam in doživite prednosti kickboksa v podporni in profesionalni okolici.',
-    image: '/images/logo.jpg',
-    siteUrl: 'https://www.kickbox-ziri.org',
+      'Karate klub Žiri ponuja dinamične in zanimive karate programe za odrasle in najstnike v Žireh. Naši strokovni trenerji zagotavljajo celovito usposabljanje, ki krepi samozavest, izboljšuje spretnosti samoobrambe in spodbuja zdrav življenjski slog. Pridružite se nam in doživite prednosti kickboksa v podporni in profesionalni okolici.',
+    siteUrl: 'https://karate-ziri.si',
+    
   },
 };
