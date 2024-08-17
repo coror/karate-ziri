@@ -150,6 +150,6 @@ export default Trenerji;
 export const Head = () => (
   <Seo
     title='Trenerji'
-    description='Spoznajte našo ekipo profesionalnih trenerjev, ki so predani temu, da vam pomagajo doseči vaše fitnes cilje. Naši trenerji so izkušeni, certificirani in strastni pri zagotavljanju osebnega vodenja in podpore za vaš uspeh.'
+    description='Spoznajte našo ekipo predanih karate trenerjev, ki vam bodo pomagali doseči vaše cilje v karateju. Naši trenerji so izkušeni, certificirani in strastni v svojem delu, ter profesionalno vodenje in podporo za vaš napredek.'
   />
 );

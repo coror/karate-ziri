@@ -68,7 +68,7 @@ const Meaning = () => {
           alt='zgodovina-puncke'
           className='max-w-[40rem]  max-h-96 h-auto shadow-lg filter brightness-90 contrast-125'
         />
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 '></div>
+        
       </div>
     </div>
   );

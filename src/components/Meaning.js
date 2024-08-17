@@ -28,9 +28,8 @@ const Meaning = () => {
         <StaticImage
           src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120141/karate-kickbox-ostalo/nutrjdedespbpecg8g3h.jpg'
           alt='erin'
-          className='max-w-[40rem] h-auto  shadow-lg filter brightness-90 contrast-125'
+          className='max-w-[40rem] h-auto '
         />
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 '></div>
       </div>
       <div
         className={`text-text2 py-10 flex flex-col justify-center items-center px-4 ${

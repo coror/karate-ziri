@@ -36,17 +36,17 @@ const Urnik = () => {
           >
             <thead>
               <tr>
-                <th className='p-3 md:px-16 border-2'> </th>
-                <th className='p-3 md:px-16 border-2'>PON</th>
-                <th className='p-3 md:px-16 border-2'>TOR</th>
-                <th className='p-3 md:px-16 border-2'>SRE</th>
-                <th className='p-3 md:px-16 border-2'>ČET</th>
-                <th className='p-3 md:px-16 border-2'>PET</th>
+                <th className='p-2 md:px-16 border-2'> </th>
+                <th className='p-2 md:px-16 border-2'>PON</th>
+                <th className='p-2 md:px-16 border-2'>TOR</th>
+                <th className='p-2 md:px-16 border-2'>SRE</th>
+                <th className='p-2 md:px-16 border-2'>ČET</th>
+                <th className='p-2 md:px-16 border-2'>PET</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className='p-3 border-2'>14:15</td>
+                <td className='p-2 border-2'>14:15</td>
                 <td
                   className='border-2 bg-[#fda92a] hover:brightness-75 transition-all duration-300 ease-in-out'
                   rowSpan='1'
@@ -68,7 +68,7 @@ const Urnik = () => {
                 <td className='border-2' rowSpan='1'></td>
               </tr>
               <tr>
-                <td className='p-3 border-2'>15:00</td>
+                <td className='p-2 border-2'>15:00</td>
                 <td
                   className='border-2 bg-[#f72f2f] hover:brightness-75 transition-all duration-300 ease-in-out'
                   rowSpan='1'
@@ -89,7 +89,7 @@ const Urnik = () => {
                 <td className='border-2'></td>
               </tr>
               <tr>
-                <td className='p-3 border-2'>16:00</td>
+                <td className='p-2 border-2'>16:00</td>
                 <td
                   className='border-2 bg-[#0d810d] hover:brightness-75 transition-all duration-300 ease-in-out'
                   rowSpan='1'
@@ -111,7 +111,7 @@ const Urnik = () => {
                 <td className='border-2' rowSpan='1'></td>
               </tr>
               <tr>
-                <td className='p-3 border-2'>17:00</td>
+                <td className='p-2 border-2'>17:00</td>
                 <td className='border-2'></td>
                 <td className='border-2'></td>
                 <td className='border-2'></td>
@@ -119,7 +119,7 @@ const Urnik = () => {
                 <td className='border-2'></td>
               </tr>
               <tr>
-                <td className='p-3 border-2'>18:00</td>
+                <td className='p-2 border-2'>18:00</td>
                 <td className='border-2'></td>
                 <td className='border-2'></td>
                 <td className='border-2'></td>
@@ -127,7 +127,7 @@ const Urnik = () => {
                 <td className='border-2'></td>
               </tr>
               <tr>
-                <td className='p-3 border-2'>19:30</td>
+                <td className='p-2 border-2'>19:30</td>
                 <td className='border-2' rowSpan='1'></td>
                 <td
                   className='border-2 bg-[#0d6a81] hover:brightness-75 transition-all duration-300 ease-in-out'
@@ -142,7 +142,7 @@ const Urnik = () => {
                 <td className='border-2' rowSpan='1'></td>
               </tr>
               <tr>
-                <td className='p-3 border-2'>20:00</td>
+                <td className='p-2 border-2'>20:00</td>
                 <td className='border-2'></td>
                 <td className='border-2'></td>
                 <td className='border-2'></td>

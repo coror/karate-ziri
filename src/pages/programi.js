@@ -59,69 +59,69 @@ function Programi() {
                   njihovimi trenerji.
                 </p>
                 <div className='flex flex-col md:flex-row items-center justify-center'>
-                    <div className='text-center max-w-[40rem] pt-10'>
-                      <div className='text-xl mb-7 underline'>
-                        Glavni učinki vadbe po programu Prijazna šola karateja
-                        in programu Karate za mladostnike:
-                      </div>
-                      <ul>
-                        <li className='mb-5 text-lg font-semibold'>
-                          POVEČANJE SAMOZAVESTI
-                        </li>
-                        <p className='mb-5 md:text-lg'>
-                          Vadba karateja je odličen način za krepitev
-                          samozavesti pri otrocih in mladostnikih. Sistematično
-                          učenje novih tehnik in premagovanje izzivov na
-                          treningih prispeva k občutku dosežkov, kar ima
-                          pozitiven vpliv na otrokovo samopodobo.
-                        </p>
-                        <li className='mb-5 text-lg font-semibold md:text-lg'>
-                          SPRETNOSTI SAMOOBRAMBE
-                        </li>
-                        <p className='mb-5 md:text-lg'>
-                          Karate ni le šport, temveč tudi učinkovita metoda
-                          samoobrambe. Otroci se učijo različnih tehnik, ki jim
-                          lahko pomagajo v primeru morebitnih neprijetnih
-                          situacij. Razvijanje teh spretnosti povečuje otrokovo
-                          občutje varnosti in mu daje znanje, kako se zaščititi
-                          pred medvrstniškim nasiljem.
-                        </p>
-                        <li className='mb-5 text-lg font-semibold'>
-                          VADBA ZA CELOTNO TELO
-                        </li>
-                        <p className='mb-5 md:text-lg'>
-                          Karate je celostna vadba, ki vključuje različne
-                          mišične skupine. Otroci razvijajo moč, vzdržljivost,
-                          gibljivost in koordinacijo. Redna vadba karateja
-                          spodbuja zdrav življenjski slog in prispeva k
-                          celostnemu fizičnemu razvoju. Zaradi kompleksnih gibov
-                          in pestrega nabora vaj, ki so vključene v vadbeni
-                          proces, pa prestavlja tudi zelo dobro osnovo za
-                          kasnejše vključevanje v druge športe.
-                        </p>
-                        <li className='mb-5 text-lg font-semibold'>
-                          SOCIALNE VEŠČINE IN EKIPNO DELO
-                        </li>
-                        <p className='mb-5 md:text-lg'>
-                          Karate nudi priložnost za druženje in sodelovanje z
-                          vrstniki. Skupaj s treningi se učijo tudi o pomenu
-                          spoštovanja, discipline, urejenosti, sodelovanja in
-                          ekipnega dela. To prispeva k razvoju socialnih veščin,
-                          ki so pomembne za uspešno interakcijo v vsakdanjem
-                          življenju.
-                        </p>
-                        <li className='mb-5 text-lg font-semibold'>
-                          RAZVIJANJE DISCIPLINE IN VZTRAJNOSTI
-                        </li>
-                        <p className='mb-5 md:text-lg'>
-                          Redni treningi karateja zahtevajo disciplino in
-                          vztrajnost. Učijo se postavljati cilje, delati na njih
-                          in premagovati ovire. To so ključne veščine, ki jim
-                          bodo koristile v šoli, doma in v življenju.
-                        </p>
-                      </ul>
+                  <div className='text-center max-w-[40rem] pt-10'>
+                    <div className='text-xl mb-7 underline'>
+                      Glavni učinki vadbe po programu Prijazna šola karateja in
+                      programu Karate za mladostnike:
                     </div>
+                    <ul>
+                      <li className='mb-5 text-lg font-semibold'>
+                        POVEČANJE SAMOZAVESTI
+                      </li>
+                      <p className='mb-5 md:text-lg'>
+                        Vadba karateja je odličen način za krepitev samozavesti
+                        pri otrocih in mladostnikih. Sistematično učenje novih
+                        tehnik in premagovanje izzivov na treningih prispeva k
+                        občutku dosežkov, kar ima pozitiven vpliv na otrokovo
+                        samopodobo.
+                      </p>
+                      <li className='mb-5 text-lg font-semibold md:text-lg'>
+                        SPRETNOSTI SAMOOBRAMBE
+                      </li>
+                      <p className='mb-5 md:text-lg'>
+                        Karate ni le šport, temveč tudi učinkovita metoda
+                        samoobrambe. Otroci se učijo različnih tehnik, ki jim
+                        lahko pomagajo v primeru morebitnih neprijetnih
+                        situacij. Razvijanje teh spretnosti povečuje otrokovo
+                        občutje varnosti in mu daje znanje, kako se zaščititi
+                        pred medvrstniškim nasiljem.
+                      </p>
+                      <li className='mb-5 text-lg font-semibold'>
+                        VADBA ZA CELOTNO TELO
+                      </li>
+                      <p className='mb-5 md:text-lg'>
+                        Karate je celostna vadba, ki vključuje različne mišične
+                        skupine. Otroci razvijajo moč, vzdržljivost, gibljivost
+                        in koordinacijo. Redna vadba karateja spodbuja zdrav
+                        življenjski slog in prispeva k celostnemu fizičnemu
+                        razvoju. Zaradi kompleksnih gibov in pestrega nabora
+                        vaj, ki so vključene v vadbeni proces, pa prestavlja
+                        tudi zelo dobro osnovo za kasnejše vključevanje v druge
+                        športe.
+                      </p>
+                      <li className='mb-5 text-lg font-semibold'>
+                        SOCIALNE VEŠČINE IN EKIPNO DELO
+                      </li>
+                      <p className='mb-5 md:text-lg'>
+                        Karate nudi priložnost za druženje in sodelovanje z
+                        vrstniki. Skupaj s treningi se učijo tudi o pomenu
+                        spoštovanja, discipline, urejenosti, sodelovanja in
+                        ekipnega dela. To prispeva k razvoju socialnih veščin,
+                        ki so pomembne za uspešno interakcijo v vsakdanjem
+                        življenju.
+                      </p>
+                      <li className='mb-5 text-lg font-semibold'>
+                        RAZVIJANJE DISCIPLINE IN VZTRAJNOSTI
+                      </li>
+                      <p className='mb-5 md:text-lg'>
+                        Redni treningi karateja zahtevajo disciplino in
+                        vztrajnost. Učijo se postavljati cilje, delati na njih
+                        in premagovati ovire. To so ključne veščine, ki jim bodo
+                        koristile v šoli, doma in v življenju.
+                      </p>
+                    </ul>
                   </div>
+                </div>
               </div>
             </div>
           </div>
@@ -222,9 +222,10 @@ function Programi() {
                         </li>
                         <p className='mb-5 md:text-lg'>
                           Redni treningi karateja zahtevajo disciplino in
-                          vztrajnost. Učijo se postavljati cilje, delati na dosegi ciljev
-                          in premagovati ovire. To so ključne veščine, ki jim
-                          bodo koristile v šoli, doma in v življenju.
+                          vztrajnost. Učijo se postavljati cilje, delati na
+                          dosegi ciljev in premagovati ovire. To so ključne
+                          veščine, ki jim bodo koristile v šoli, doma in v
+                          življenju.
                         </p>
                       </ul>
                     </div>
@@ -352,6 +353,7 @@ export default Programi;
 export const Head = () => (
   <Seo
     title='Programi'
-    description='Odkrijte našo raznoliko ponudbo programov, zasnovanih za vse ravni telesne pripravljenosti in interese. Od treninga moči do joge, naši strokovni trenerji nudijo osebno usmerjanje, da vam pomagajo doseči vaše fitnes cilje.'
+    description='
+Odkrijte našo raznoliko ponudbo karate programov za otroke, mladostnike in odrasle, zasnovanih za vse ravni izkušenj in telesne pripravljenosti. Naši strokovni trenerji nudijo osebno usmerjanje in podporo, da vam pomagajo razviti veščine, samozavest in kondicijo ter doseči vaše cilje v karateju.'
   />
 );

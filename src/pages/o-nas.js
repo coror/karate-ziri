@@ -34,9 +34,9 @@ const About = () => {
               borilnih veščin, na osnovi bogatih izkušenj iz borbenih znanj,
               inovativnega znanstvenega raziskovanja, več desetletnega
               pedagoškega in andragoškega dela, oblikujemo moderne vadbene
-              programe borilnih veščin, s poudarkom na karateju in kikboksu,
-              ki so prilagojeni potrebam modernega časa, starosti in željam
-              vsakega posameznika.
+              programe borilnih veščin, s poudarkom na karateju in kikboksu, ki
+              so prilagojeni potrebam modernega časa, starosti in željam vsakega
+              posameznika.
             </p>
           </div>
           <div className='flex flex-col xl:flex-row-reverse items-center xl:items-start justify-center mt-10'>
@@ -186,6 +186,6 @@ export default About;
 export const Head = () => (
   <Seo
     title='O nas'
-    description='Spoznajte filozofijo in načela, ki stojijo za našimi borilnimi veščinami. Naučite se, kako odpravljamo pogoste predsodke o borilnih veščinah, s poudarkom na kontroliranem vadbenem okolju, ki spodbuja fizični, mentalni in čustveni razvoj. Naš pristop poudarja spoštovanje, samozavest in uravnotežen življenjski slog, ki vam pomaga doseči vaš polni potencial.'
+    description='Spoznajte filozofijo in načela, ki stojijo za našimi borilnimi veščinami, ter odkrijte zgodovino našega kluba. Naučite se, kako odpravljamo pogoste predsodke o borilnih veščinah, s poudarkom na kontroliranem vadbenem okolju, ki spodbuja fizični, mentalni in čustveni razvoj. Naš pristop poudarja spoštovanje, samozavest in uravnotežen življenjski slog, ki vam pomaga doseči vaš polni potencial.'
   />
 );
