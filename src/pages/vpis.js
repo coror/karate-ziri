@@ -458,8 +458,8 @@ const Vpis = () => {
               type='radio'
               id='mladostniki'
               name='tecaj'
-              value='karate_mladostniki'
-              checked={fields.tecaj.includes('karate_mladostniki')}
+              value='karate_mladostniki_ziri'
+              checked={fields.tecaj.includes('karate_mladostniki_ziri')}
               className='mb-3'
               onChange={handleChange}
             />
@@ -472,8 +472,8 @@ const Vpis = () => {
               type='radio'
               id='odrasli'
               name='tecaj'
-              value='karate_odrasli'
-              checked={fields.tecaj.includes('karate_odrasli')}
+              value='karate_odrasli_ziri'
+              checked={fields.tecaj.includes('karate_odrasli_ziri')}
               className='mb-3'
               onChange={handleChange}
             />
