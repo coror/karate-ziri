@@ -32,6 +32,12 @@ module.exports = {
         prefix: `karate-ziri-galerija/`, // specify the folder,
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://karate-ziri.si`,
+      },
+    },
   ],
   siteMetadata: {
     title: 'Karate Žiri',

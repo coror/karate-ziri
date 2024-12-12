@@ -458,8 +458,8 @@ const Vpis = () => {
               type='radio'
               id='mladostniki'
               name='tecaj'
-              value='mladostniki'
-              checked={fields.tecaj.includes('mladostniki')}
+              value='karate_mladostniki'
+              checked={fields.tecaj.includes('karate_mladostniki')}
               className='mb-3'
               onChange={handleChange}
             />
@@ -472,8 +472,8 @@ const Vpis = () => {
               type='radio'
               id='odrasli'
               name='tecaj'
-              value='odrasli'
-              checked={fields.tecaj.includes('odrasli')}
+              value='karate_odrasli'
+              checked={fields.tecaj.includes('karate_odrasli')}
               className='mb-3'
               onChange={handleChange}
             />
@@ -549,7 +549,7 @@ const Vpis = () => {
           ></textarea>
 
           <label htmlFor='zastopnik' className='mb-1'>
-            ZASTOPNIK (če si mladoleten/a, vpiši ime in pr starša oz. zakonitega
+            ZASTOPNIK (če si mladoleten/a, vpiši ime in priimek starša oz. zakonitega
             zastopnika)
           </label>
           <input
@@ -562,8 +562,7 @@ const Vpis = () => {
           />
 
           <label htmlFor='priporocilo' className='mb-1'>
-            KAKO STE IZVEDELI ZA NAS? (splet, prijatelji, Facebook, Instagram,
-            drugo)
+            V KLUB SE VČLANJUJEM PO PRIPOROČILU (ime in priimek našega člana)
           </label>
           <textarea
             id='priporocilo'

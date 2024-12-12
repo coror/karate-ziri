@@ -19,7 +19,7 @@ const Programi = () => {
   }, [inView]);
 
   return (
-    <div className='relative  pt-20'>
+    <div className='relative  pt-8'>
       <img
         src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120071/karate-kickbox-ostalo/dayq6d0vm8fimofwmgaq.jpg'
         alt='Background'
@@ -31,21 +31,31 @@ const Programi = () => {
       />
       <div className='absolute inset-0 bg-layout1 opacity-75'></div>
       <div className='relative text-text2 font-oswald'>
-        <div className='container mx-auto py-10' ref={ref}>
-          <div className='flex flex-col items-center justify-center mb-10'>
-            <h1 className='text-3xl font-bold text-center'>PROGRAMI</h1>
-            <div className='border-b-4 border-identifier w-12 text-center mt-5'></div>
-          </div>
+        <div
+          className={`container mx-auto py-10 ${
+            animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+          }`}
+          ref={ref}
+        >
           <div
-            className={`flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 ${
-              animate
+            className={`flex flex-col items-center justify-center mb-10  ${animate
                 ? 'animate-fade-right animate-duration-1000 animate-delay-200 animate-ease-in-out'
                 : ''
             } `}
           >
-            <div className='bg-layout1 shadow-lg max-w-xs m-5'>
+            <h1 className='text-3xl font-bold text-center'>PROGRAMI</h1>
+            <div className='border-b-4 border-identifier w-12 text-center mt-5'></div>
+          </div>
+          <div
+            className={`flex flex-col md:flex-row justify-center items-center animate space-y-6 md:space-y-0 ${
+              animate
+                ? 'animate-fade-right animate-duration-1000 animate-delay-1000 animate-ease-in-out'
+                : ''
+            } `}
+          >
+            <div className='bg-layout1 shadow-lg max-w-s m-5'>
               <Link to='/programi/#otroci'>
-                <div className=' h-56 md:h-64 overflow-hidden'>
+                <div className=' h-56 xl:h-80 overflow-hidden'>
                   <StaticImage
                     src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723119535/karate-ziri-galerija/lozhctupaoe2kiem1olv.png'
                     alt='prijazna'
@@ -54,7 +64,7 @@ const Programi = () => {
                 </div>
               </Link>
 
-              <div className='p-4 flex flex-col'>
+              <div className='p-4  h-40 flex flex-col'>
                 <Link
                   className='text-xl font-semibold mb-2 cursor-pointer text-center items-center'
                   to='/programi/#otroci'
@@ -68,18 +78,18 @@ const Programi = () => {
               </div>
             </div>
 
-            <div className='bg-layout1 shadow-lg max-w-xs m-5'>
+            <div className='bg-layout1 shadow-lg max-w-s m-5'>
               <Link to='/programi/#mladostniki'>
-                <div className=' h-56 md:h-64 overflow-hidden'>
+                <div className=' h-56 xl:h-80 overflow-hidden'>
                   <StaticImage
-                    src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723144047/karate-ziri-galerija/ripmx6jdwyjf0oonu1bm.jpg'
+                    src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1733911275/karate-kickbox-ostalo/cuxikjkc3ouhfagxitwg.jpg'
                     alt='mladostniki'
                     className='w-full h-full hover:opacity-50 transition-opacity duration-300 ease-in-out cursor-pointer max-w-96'
                   />
                 </div>
               </Link>
 
-              <div className='p-4 flex flex-col'>
+              <div className='p-4 h-40 flex flex-col'>
                 <Link
                   className='text-xl font-semibold mb-2 cursor-pointer text-center items-center'
                   to='/programi/#mladostniki'
@@ -93,9 +103,9 @@ const Programi = () => {
               </div>
             </div>
 
-            <div className='bg-layout1 shadow-lg max-w-xs m-5'>
+            <div className='bg-layout1 shadow-lg max-w-s m-5'>
               <Link to='/programi/#odrasli'>
-                <div className='w-full h-56 md:h-64 overflow-hidden'>
+                <div className='w-full h-56 xl:h-80 overflow-hidden'>
                   <StaticImage
                     src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723128682/karate-kickbox-ostalo/osjgatd9s3ibq0ec75wq.jpg'
                     alt='odrasli'
@@ -104,7 +114,7 @@ const Programi = () => {
                 </div>
               </Link>
 
-              <div className='p-4 flex flex-col'>
+              <div className='p-4 h-40  flex flex-col'>
                 <Link
                   className='text-xl font-semibold mb-2 cursor-pointer text-center items-center'
                   to='/programi/#odrasli'

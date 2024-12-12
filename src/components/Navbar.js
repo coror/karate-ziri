@@ -35,7 +35,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='bg-layout1 md:flex md:items-center md:min-h-32 md:absolute z-50 w-full '>
+    <nav className='bg-layout1 md:flex md:items-center md:min-h-28 md:absolute z-50 w-full '>
       <div className='mx-auto px-2 sm:px-6 lg:px-8 '>
         <div className='relative flex h-20 items-center '>
           <div className='absolute inset-y-0 left-0 flex items-center lg:hidden'>

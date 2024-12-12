@@ -101,7 +101,9 @@ const Trenerji = () => {
                 delovati tudi kot trener karateja. Trenutno je trener kickboksa
                 v Idriji in v Žireh ter karate trener tekmovalcev ter
                 rekreativnih skupin v Idriji, Črnem Vrhu, Spodnji Idriji in
-                Žireh.
+                Žireh. Poleg tega je reprezentančni trener Karate zveze
+                Slovenije, kjer svoje bogate izkušnje in znanje prenaša tudi na
+                vrhunske športnike.
               </p>
             </div>
           </div>

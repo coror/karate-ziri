@@ -17,31 +17,41 @@ const Urnik = () => {
 
   return (
     <div className='text-text2 font-oswald text-center relative pb-10'>
-      <div className='absolute inset-0 bg-layout1 opacity-75 z-0 ' ></div>
-      <div className='relative z-10'>
-        <div className='flex flex-col items-center justify-center mb-10 py-10'>
-          <h1 className='text-3xl font-bold text-center'>URNIK</h1>
+      <div className='absolute inset-0 bg-layout1 opacity-75 z-0'></div>
+      <div
+        className={`relative z-10 ${
+          animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+        }`}
+        ref={ref}
+      >
+        <div className={`flex flex-col items-center justify-center mb-10 py-10  ${
+              animate
+                ? 'animate-fade-right animate-duration-1000 animate-delay-200 animate-ease-in-out'
+                : ''
+            } `}>
+          <h1
+            className='text-3xl font-bold text-center'
+          >
+            URNIK
+          </h1>
           <div className='border-b-4 border-identifier w-12 text-center mt-5'></div>
         </div>
-        <div
-          className='flex justify-center items-center  text-xs md:text-base'
-          ref={ref}
-        >
+        <div className='flex justify-center items-center  text-xs md:text-base'>
           <table
             className={`m-10 border-2 border-collapse ${
               animate
-                ? 'animate-fade-down animate-once animate-duration-1000 animate-delay-200'
+                ? 'animate-fade-right animate-once animate-duration-1000 animate-delay-1000'
                 : ''
             }`}
           >
             <thead>
               <tr>
-                <th className='p-2 md:px-16 border-2'> </th>
-                <th className='p-2 md:px-16 border-2'>PON</th>
-                <th className='p-2 md:px-16 border-2'>TOR</th>
-                <th className='p-2 md:px-16 border-2'>SRE</th>
-                <th className='p-2 md:px-16 border-2'>ČET</th>
-                <th className='p-2 md:px-16 border-2'>PET</th>
+                <th className='p-2 md:px-12 lg:px-16 border-2'> </th>
+                <th className='p-2 md:px-12 lg:px-16 border-2'>PON</th>
+                <th className='p-2 md:px-12 lg:px-16 border-2'>TOR</th>
+                <th className='p-2 md:px-12 lg:px-16 border-2'>SRE</th>
+                <th className='p-2 md:px-12 lg:px-16 border-2'>ČET</th>
+                <th className='p-2 md:px-12 lg:px-16 border-2'>PET</th>
               </tr>
             </thead>
             <tbody>
