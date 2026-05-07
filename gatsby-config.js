@@ -30,7 +30,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
   ],
   siteMetadata: {
     title: 'Karate Žiri',

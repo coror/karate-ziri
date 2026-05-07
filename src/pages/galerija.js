@@ -43,22 +43,14 @@ const Galerija = () => {
   return (
     <Layout>
       <div className='-mt-20 font-oswald'>
-        <div
-          className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden'
-          style={{
-            backgroundImage:
-              'url("https://res.cloudinary.com/di4ms4xaz/image/upload/e_blur:1000,w_60,c_limit,f_auto,q_30/v1777969167/rznnxliv9rdmhd41y7ci.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center 40%',
-          }}
-        >
+        <div className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden'>
           <StaticImage
             src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1777969167/rznnxliv9rdmhd41y7ci.png'
             alt='Galerija'
             className='!absolute inset-0 w-full h-full'
             imgClassName='!scale-150 !origin-top md:!scale-100 md:!origin-center'
             loading='eager'
-            placeholder='none'
+            placeholder='blurred'
             objectFit='cover'
             objectPosition='center 40%'
             layout='fullWidth'

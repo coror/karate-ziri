@@ -52,22 +52,14 @@ const About = () => {
   return (
     <Layout>
       <div className='-mt-20 font-oswald'>
-        <div
-          className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden'
-          style={{
-            backgroundImage:
-              'url("https://res.cloudinary.com/di4ms4xaz/image/upload/e_blur:1000,w_60,c_limit,f_auto,q_30/v1723120143/karate-kickbox-ostalo/c9csacfflvwpgpmxugx3.jpg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center 55%',
-          }}
-        >
+        <div className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden'>
           <StaticImage
             src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120143/karate-kickbox-ostalo/c9csacfflvwpgpmxugx3.jpg'
             alt='O nas'
             className='!absolute inset-0 w-full h-full'
             imgClassName='!scale-150 !origin-top md:!scale-100 md:!origin-center'
             loading='eager'
-            placeholder='none'
+            placeholder='blurred'
             objectFit='cover'
             objectPosition='center 55%'
             layout='fullWidth'

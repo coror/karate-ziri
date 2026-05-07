@@ -4,21 +4,13 @@ import { Link } from 'gatsby';
 
 const Header = () => {
   return (
-    <div
-      className='relative w-full min-h-[55vh] md:min-h-screen overflow-hidden'
-      style={{
-        backgroundImage:
-          'url("https://res.cloudinary.com/di4ms4xaz/image/upload/e_blur:1000,w_60,c_limit,f_auto,q_30/v1723119995/karate-kickbox-ostalo/djlpka7xcs8ys6rhqszs.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
+    <div className='relative w-full min-h-[55vh] md:min-h-screen overflow-hidden'>
       <StaticImage
         src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723119995/karate-kickbox-ostalo/djlpka7xcs8ys6rhqszs.jpg'
         alt='KARATE ŽIRI'
         className='!absolute inset-0 w-full h-full'
         loading='eager'
-        placeholder='none'
+        placeholder='blurred'
         objectFit='cover'
         layout='fullWidth'
         quality={100}
