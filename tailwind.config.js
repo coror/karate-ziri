@@ -4,6 +4,9 @@ module.exports = {
     './src/pages/**/*.{js,jsx,ts,tsx}',
     './src/components/**/*.{js,jsx,ts,tsx}',
   ],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -12,7 +15,7 @@ module.exports = {
       colors: {
         identifier: '#f4ab04',
         layout1: '#1A2930',
-        layout2: '#C5C1C0',
+        layout2: '#F5F5F4',
         text1: '#0A1612',
         text2: '#ffffff'
       },

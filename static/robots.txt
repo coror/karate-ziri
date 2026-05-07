@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karate-ziri.si/sitemap-index.xml

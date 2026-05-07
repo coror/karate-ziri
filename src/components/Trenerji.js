@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
-import { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+
+const TrainerCard = ({ to, image, name, role, animate, delay }) => (
+  <div
+    className={`group flex flex-col text-center justify-start items-center mx-4 ${
+      animate ? `animate-fade-up animate-once animate-duration-1000 ${delay}` : ''
+    }`}
+  >
+    <Link className='block w-64 h-64 lg:w-72 lg:h-72 relative' to={to}>
+      <div className='w-full h-full rounded-full overflow-hidden ring-4 ring-transparent group-hover:ring-identifier transition-all duration-300 shadow-xl'>
+        {image}
+      </div>
+    </Link>
+    <div className='mt-6'>
+      <Link
+        className='text-text1 text-2xl hover:text-identifier transition-colors'
+        to={to}
+      >
+        {name}
+      </Link>
+      <p className='text-text1/70 mt-1'>{role}</p>
+    </div>
+  </div>
+);
 
 const Trenerji = () => {
   const [animate, setAnimate] = useState(false);
@@ -11,7 +33,6 @@ const Trenerji = () => {
     threshold: 0.1,
   });
 
-  // When the component comes into view, set animate to true
   useEffect(() => {
     if (inView) {
       setAnimate(true);
@@ -19,110 +40,69 @@ const Trenerji = () => {
   }, [inView]);
 
   return (
-    <div className='bg-layout2 font-oswald py-8'>
+    <div className='bg-layout2 font-oswald py-16 md:py-24'>
       <div
-        className={`transition-opacity duration-2000 transform ${
+        className={`max-w-7xl mx-auto px-6 transition-opacity duration-1000 ${
           animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
         }`}
         ref={ref}
       >
         <div
-          className={`flex flex-col items-center justify-center mb-10 pt-10 ${
+          className={`flex flex-col items-center justify-center mb-16 ${
             animate
-              ? 'animate-fade-right animate-duration-1000 animate-delay-200 animate-ease-in-out'
+              ? 'animate-fade-up animate-duration-1000 animate-delay-200'
               : ''
-          } `}
+          }`}
         >
-          <h1 className='text-3xl font-bold text-center text-text2'>
+          <h1 className='text-3xl md:text-5xl font-extrabold text-center text-text1 tracking-wide'>
             TRENERJI
           </h1>
-          <div className='border-b-4 border-identifier w-12 text-center mt-5'></div>
+          <div className='border-b-4 border-identifier w-16 mt-5'></div>
         </div>
-        <div className='flex flex-col md:flex-row justify-center items-center'>
-          {/*Trener 1 */}
-          <div
-            className={`flex flex-col text-center justify-center items-center m-8 lg:mx-8 ${
-              animate
-                ? 'animate-fade-right animate-once animate-duration-1000 animate-delay-1000'
-                : ''
-            }`}
-          >
-            <Link className='max-w-80' to='/trenerji/#jernej'>
+
+        <div className='flex flex-col md:flex-row justify-center items-start gap-8 md:gap-12'>
+          <TrainerCard
+            to='/trenerji/#jernej'
+            name='Jernej Sever'
+            role='Vodja karate instituta / trener odraslih skupin'
+            animate={animate}
+            delay='animate-delay-500'
+            image={
               <StaticImage
                 src='https://res.cloudinary.com/dbssbnuph/image/upload/t_benjamin4/v1720821140/kickbox-ziri/DSC_1393-Edit_kufse2'
                 alt='jernej'
-                className='rounded-full w-full h-full max-h-80 hover:brightness-75 transition-all duration-300 ease-in-out cursor-pointer'
+                className='w-full h-full transition-transform duration-500 group-hover:scale-105'
               />
-            </Link>
-
-            <div className='mt-6'>
-              <Link
-                className='text-text1 text-2xl mt-10 hover:text-layout1 cursor-pointer'
-                to='/trenerji/#jernej'
-              >
-                Jernej Sever
-              </Link>
-              <p className='text-layout1'>
-                Vodja karate instituta / trener odraslih skupin
-              </p>
-            </div>
-          </div>
-
-          {/*Trener 2 */}
-          <div
-            className={`flex flex-col text-center justify-center items-center m-8 lg:mx-8 ${
-              animate
-                ? 'animate-fade-right animate-once animate-duration-1000 animate-delay-1000'
-                : ''
-            }`}
-          >
-            <Link className='max-w-80' to='/trenerji/#erin'>
+            }
+          />
+          <TrainerCard
+            to='/trenerji/#erin'
+            name='Erin Ćoralić'
+            role='Trener otroških in tekmovalnih skupin'
+            animate={animate}
+            delay='animate-delay-700'
+            image={
               <StaticImage
                 src='https://res.cloudinary.com/dbssbnuph/image/upload/f_auto,q_auto/v1/kickbox-ziri/DSC_1399-Edit_kw7z9t'
                 alt='erin'
-                className='rounded-full w-full h-full max-h-80 hover:brightness-75 transition-all duration-300 ease-in-out cursor-pointer'
+                className='w-full h-full transition-transform duration-500 group-hover:scale-105'
               />
-            </Link>
-
-            <div className='mt-6'>
-              <Link
-                className='text-text1 text-2xl mt-10 hover:text-layout1 cursor-pointer'
-                to='/trenerji/#erin'
-              >
-                Erin Ćoralić
-              </Link>
-              <p className='text-layout1'>
-                Trener otroških in tekmovalnih skupin
-              </p>
-            </div>
-          </div>
-
-          {/*Trener 3 */}
-          <div
-            className={`flex flex-col text-center justify-center items-center m-8 lg:mx-8 ${
-              animate
-                ? 'animate-fade-right animate-once animate-duration-1000 animate-delay-1000'
-                : ''
-            }`}
-          >
-            <Link className='max-w-80' to='/trenerji/#benjamin'>
+            }
+          />
+          <TrainerCard
+            to='/trenerji/#benjamin'
+            name='Benjamin Bajuk'
+            role='Trener odraslih skupin'
+            animate={animate}
+            delay='animate-delay-1000'
+            image={
               <StaticImage
                 src='https://res.cloudinary.com/dbssbnuph/image/upload/t_benjamin4/v1720820700/kickbox-ziri/DSC_1407-Edit_cefzx1'
                 alt='benjamin'
-                className='rounded-full w-full h-full max-h-80 hover:brightness-75 transition-all duration-300 ease-in-out cursor-pointer'
+                className='w-full h-full transition-transform duration-500 group-hover:scale-105'
               />
-            </Link>
-
-            <div className='mt-6'>
-              <Link
-                className='text-text1 text-2xl mt-10 hover:text-layout1 cursor-pointer'
-                to='/trenerji/#benjamin'
-              >
-                Benjamin Bajuk
-              </Link>
-              <p className='text-layout1'>Trener odraslih skupin</p>
-            </div>
-          </div>
+            }
+          />
         </div>
       </div>
     </div>

@@ -7,10 +7,10 @@ import ProgramiComponent from '../components/ProgramiComponent';
 import Trenerji from '../components/Trenerji';
 import Urnik from '../components/Urnik';
 import Mapa from '../components/Mapa';
-import Seo from '../components/Seo'; // Ensure correct import
+import Seo from '../components/Seo';
 import Header from '../components/Header';
-
 import About from '../components/About';
+import Achievement from '../components/Achievement';
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
       <Header />
       <ContactLine />
       <Meaning />
+      <Achievement />
       <About />
       <ProgramiComponent />
       <Trenerji />
@@ -27,4 +28,4 @@ export default function Home() {
   );
 }
 
-export const Head = () => <Seo />;
+export const Head = ({ location }) => <Seo pathname={location.pathname} />;

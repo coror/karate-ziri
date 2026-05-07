@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #f4ab04;
+  outline-offset: 3px;
+}
+
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-100%); /* Start from the left edge of the viewport */

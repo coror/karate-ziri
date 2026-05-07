@@ -20,7 +20,7 @@ const Meaning = () => {
   }, [inView]);
 
   return (
-    <div className='font-oswald bg-layout2  p-8'>
+    <div className='font-oswald bg-layout2 py-16 md:py-24 px-6'>
       <div
         className={`transition-opacity duration-2000 transform md:space-x-4 flex flex-col md:flex-row items-center justify-center ${
           animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
@@ -37,11 +37,11 @@ const Meaning = () => {
           <StaticImage
             src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120141/karate-kickbox-ostalo/nutrjdedespbpecg8g3h.jpg'
             alt='erin'
-            className='max-w-[40rem] h-auto '
+            className='max-w-[40rem] h-auto shadow-2xl transition-transform duration-500 hover:scale-[1.02]'
           />
         </div>
         <div
-          className={`text-text2 py-10 flex flex-col justify-center items-center px-4 ${
+          className={`text-text1 py-10 flex flex-col justify-center items-center px-4 ${
             animate
               ? 'animate-fade-right animate-duration-1000 animate-delay-1000'
               : ''
@@ -70,7 +70,7 @@ const Meaning = () => {
               Taki predsodki izvirajo iz...
               <span className='inline-block'>
                 <Link
-                  className=' flex text-sm text-text2 hover:text-layout1 border-b-2 border-identifier m-2  cursor-pointer transition ease-in-out'
+                  className=' flex text-sm text-text1 hover:text-identifier border-b-2 border-identifier m-2  cursor-pointer transition ease-in-out'
                   to='/o-nas/#pomen'
                 >
                   PREBERI VEČ

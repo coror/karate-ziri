@@ -82,8 +82,9 @@ export default function TermsOfService() {
   );
 }
 
-export const Head = () => (
+export const Head = ({ location }) => (
   <Seo
+    pathname={location.pathname}
     title='Pogoji uporabe'
     description="Preberite naše splošne pogoje in se seznanite s pravili, smernicami ter pravnimi sporazumi, ki urejajo uporabo naše spletne strani in storitev. Spoznajte odgovornosti uporabnikov, politiko zasebnosti in kako ščitimo vaše pravice. Bodite obveščeni o svojih obveznostih in naših zavezah."
   />
