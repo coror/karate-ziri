@@ -52,7 +52,15 @@ const About = () => {
   return (
     <Layout>
       <div className='-mt-20 font-oswald'>
-        <div className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden bg-layout1'>
+        <div
+          className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden bg-layout1'
+          style={{
+            backgroundImage:
+              'url("https://res.cloudinary.com/di4ms4xaz/image/upload/e_blur:1000,w_60,c_limit,f_auto,q_30/v1778346043/aad4cfuzytvopac1qhyw.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center top',
+          }}
+        >
           <StaticImage
             src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1778346043/aad4cfuzytvopac1qhyw.jpg'
             alt='O nas'

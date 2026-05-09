@@ -48,7 +48,15 @@ const Trenerji = () => {
   return (
     <Layout>
       <div className='-mt-20 font-oswald'>
-        <div className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden'>
+        <div
+          className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden bg-layout1'
+          style={{
+            backgroundImage:
+              'url("https://res.cloudinary.com/di4ms4xaz/image/upload/e_blur:1000,w_60,c_limit,f_auto,q_30/v1723119527/karate-ziri-galerija/lvmiiiodhvsdlt9rywhu.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 15%',
+          }}
+        >
           <StaticImage
             src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723119527/karate-ziri-galerija/lvmiiiodhvsdlt9rywhu.jpg'
             alt='Trenerji'
