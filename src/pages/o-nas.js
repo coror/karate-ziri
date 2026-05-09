@@ -52,16 +52,16 @@ const About = () => {
   return (
     <Layout>
       <div className='-mt-20 font-oswald'>
-        <div className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden'>
+        <div className='relative w-full min-h-[40vh] md:min-h-[70vh] overflow-hidden bg-layout1'>
           <StaticImage
-            src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723120143/karate-kickbox-ostalo/c9csacfflvwpgpmxugx3.jpg'
+            src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1778346043/aad4cfuzytvopac1qhyw.jpg'
             alt='O nas'
             className='!absolute inset-0 w-full h-full'
-            imgClassName='!scale-150 !origin-top md:!scale-100 md:!origin-center'
+            imgClassName='!scale-[2] !origin-top !translate-y-16 !translate-x-20 md:!scale-100 md:!origin-center md:!translate-y-0 md:!translate-x-0'
             loading='eager'
             placeholder='blurred'
             objectFit='cover'
-            objectPosition='center 55%'
+            objectPosition='center top'
             layout='fullWidth'
             quality={100}
             formats={['auto', 'webp', 'avif']}
@@ -165,29 +165,52 @@ const About = () => {
             id='ep'
             className='scroll-mt-32 max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24'
           >
-            <SectionHeading>
-              LIA KRVINA – BRONASTA NA EVROPSKEM PRVENSTVU!
-            </SectionHeading>
+            <SectionHeading>LIA KRVINA</SectionHeading>
+
             <ImageTextRow
               image={
                 <StaticImage
-                  src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1723119531/karate-ziri-galerija/s9pepzmaxoa4lk07ntvv'
-                  alt='zgodovina1'
+                  src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1778346044/fqxl1qgk8secyxxzsaco.jpg'
+                  alt='Lia Krvina'
                   className='w-full h-auto rounded-sm shadow-2xl'
                 />
               }
             >
               <p>
-                7. februarja 2025 je v Bielsko-Biali na Poljskem potekalo
-                Evropsko prvenstvo v karateju za kadete, mladince in mlajše
-                člane, kjer je naša članica Lia Krvina kot del slovenske
-                reprezentance osvojila bronasto medaljo! V kategoriji kadetinj
-                do 61 kg je premagala tekmovalke iz Avstrije, Ukrajine,
-                Turčije in Portugalske ter si z odločilno zmago proti Nemčiji
-                priborila mesto na stopničkah. Lia je poskrbela za edino
-                slovensko medaljo na prvenstvu in s tem dosegla zgodovinski
-                uspeh za naš klub! Lia na poti do medalje:
+                Lia Krvina je ena izmed najuspešnejših tekmovalk kluba, ki s
+                svojimi rezultati dokazuje izjemno predanost, disciplino in
+                borbenost – tako na slovenski kot tudi mednarodni ravni.
               </p>
+              <p>
+                V Sloveniji je osvojila kar pet naslovov državne prvakinje v
+                borbah, s čimer se uvršča med najbolj vidne mlade tekmovalke
+                svoje generacije. Svoje uspehe pa je v zadnjih letih še
+                nadgradila tudi v tujini, kjer redno dosega vrhunske rezultate
+                na največjih evropskih in svetovnih tekmovanjih.
+              </p>
+            </ImageTextRow>
+
+            <ImageTextRow
+              reverse
+              image={
+                <StaticImage
+                  src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1743282576/karate-ziri-galerija/s9pepzmaxoa4lk07ntvv.webp'
+                  alt='Lia Krvina – Evropsko prvenstvo 2025'
+                  className='w-full h-auto rounded-sm shadow-2xl'
+                />
+              }
+            >
+              <p className='text-identifier uppercase tracking-widest text-sm'>
+                Evropsko prvenstvo 2025 – bronasta medalja
+              </p>
+              <p>
+                Njen največji uspeh, na katerega je klub izjemno ponosen, je
+                osvojeno 3. mesto na Evropskem prvenstvu februarja 2025. Po
+                kar šestih izjemnih borbah je med 36 tekmovalkami osvojila
+                bronasto medaljo in poskrbela za enega največjih uspehov v
+                zgodovini kluba.
+              </p>
+              <p>Liina pot do medalje:</p>
               <ul className='list-none border-l-2 border-identifier/40 pl-5 space-y-1'>
                 <li>Slovenija vs. Avstrija (8-1)</li>
                 <li>Slovenija vs. Ukrajina (2-0)</li>
@@ -196,25 +219,6 @@ const About = () => {
                 <li>Slovenija vs. Kosovo (0-6)</li>
                 <li>Slovenija vs. Nemčija (3-1) – zmaga za bron!</li>
               </ul>
-              <p>
-                Tekmovanje je bilo izjemno zahtevno, a Lia je z
-                nepopustljivostjo in borbenostjo dokazala, da spada med
-                najboljše v Evropi. Na prvenstvu jo je spremljal tudi naš
-                klubski trener, ki je hkrati reprezentančni trener, ter ji s
-                svojo podporo pomagal do tega izjemnega dosežka.
-              </p>
-            </ImageTextRow>
-
-            <ImageTextRow
-              reverse
-              image={
-                <StaticImage
-                  src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1777925236/hffz2nfepql9zyuy8dmy.png'
-                  alt='zgodovina2'
-                  className='w-full h-auto rounded-sm shadow-2xl'
-                />
-              }
-            >
               <blockquote className='border-l-4 border-identifier pl-6 italic text-text1/90'>
                 "Evropsko prvenstvo je bilo zame izjemna izkušnja, polna
                 čustev in nepozabnih trenutkov. Pred nastopom sem bila
@@ -225,12 +229,64 @@ const About = () => {
                 Ta tekma bo za vedno ostala v mojem srcu kot potrditev trdega
                 dela in vztrajnosti." – Lia Krvina.
               </blockquote>
+            </ImageTextRow>
+
+            <ImageTextRow
+              image={
+                <StaticImage
+                  src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1778346043/jsrwmalye2bm8ksynqr0.jpg'
+                  alt='Lia Krvina – Evropsko prvenstvo 2026'
+                  className='w-full h-auto rounded-sm shadow-2xl'
+                />
+              }
+            >
+              <p className='text-identifier uppercase tracking-widest text-sm'>
+                Evropsko prvenstvo 2026 – 5. mesto
+              </p>
               <p>
-                Lia je s svojim dosežkom zapisala novo poglavje v zgodovini
-                našega kluba in dokazala, da sodimo v sam vrh evropskega
-                karateja. Čestitke, Lia! Ponosni smo nate!
+                Leto kasneje, februarja 2026, je Lia na Evropskem prvenstvu
+                ponovno prikazala odlične nastope in osvojila izjemno 5.
+                mesto. Ponovno je bila zelo blizu medalje, a kljub tesnemu
+                porazu v borbi za bron ostaja rezultat velik uspeh in še ena
+                potrditev njenega kakovostnega dela ter vrhunske forme na
+                evropski ravni.
               </p>
             </ImageTextRow>
+
+            <ImageTextRow
+              reverse
+              image={
+                <StaticImage
+                  src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1778347567/amp5o71nxwhwr2znzjb1.jpg'
+                  alt='Lia Krvina – mladinske svetovne lige'
+                  className='w-full h-auto rounded-sm shadow-2xl'
+                />
+              }
+            >
+              <p className='text-identifier uppercase tracking-widest text-sm'>
+                Svetovne lige – zlato in bron
+              </p>
+              <p>
+                Posebej velja omeniti tudi njene uspehe na mladinskih
+                svetovnih ligah. Po dveh petih mestih v Poreču in Španiji je
+                avgusta 2025 v Mehiki osvojila svojo prvo zlato medaljo na
+                svetovni ligi. Kljub prestopu v višjo kategorijo je navdušila
+                z izjemnimi predstavami, premagala vso konkurenco in stopila
+                na najvišjo stopničko zmagovalnega odra.
+              </p>
+              <p>
+                Svojo drugo medaljo na svetovnih ligah je osvojila v Afriki,
+                kjer je ponovno dokazala vrhunsko formo ter domov prinesla
+                odlično bronasto medaljo.
+              </p>
+            </ImageTextRow>
+
+            <p className='max-w-3xl mx-auto text-center md:text-lg leading-relaxed text-text1/85 mt-6'>
+              Lia s svojimi dosežki predstavlja pomemben del našega kluba ter
+              navdih mlajšim generacijam športnikov. Njena vztrajnost,
+              delavnost in želja po napredku jo uvrščajo med najobetavnejše
+              tekmovalke svoje generacije.
+            </p>
           </section>
 
           <div className='border-t border-text1/10'></div>
