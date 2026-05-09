@@ -25,9 +25,11 @@ const SectionHeading = ({ children }) => (
   </div>
 );
 
-const ImageTextRow = ({ image, reverse, children }) => (
+const ImageTextRow = ({ image, reverse, mobileImageBelow, children }) => (
   <div
-    className={`flex flex-col gap-10 lg:gap-14 items-start mb-14 ${
+    className={`flex ${
+      mobileImageBelow ? 'flex-col-reverse' : 'flex-col'
+    } gap-10 lg:gap-14 items-start mb-14 ${
       reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
     }`}
   >
@@ -176,6 +178,7 @@ const About = () => {
             <SectionHeading>LIA KRVINA</SectionHeading>
 
             <ImageTextRow
+              mobileImageBelow
               image={
                 <StaticImage
                   src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1778346044/fqxl1qgk8secyxxzsaco.jpg'
@@ -200,6 +203,7 @@ const About = () => {
 
             <ImageTextRow
               reverse
+              mobileImageBelow
               image={
                 <StaticImage
                   src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1743282576/karate-ziri-galerija/s9pepzmaxoa4lk07ntvv.webp'
@@ -240,6 +244,7 @@ const About = () => {
             </ImageTextRow>
 
             <ImageTextRow
+              mobileImageBelow
               image={
                 <StaticImage
                   src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1778346043/jsrwmalye2bm8ksynqr0.jpg'
@@ -263,6 +268,7 @@ const About = () => {
 
             <ImageTextRow
               reverse
+              mobileImageBelow
               image={
                 <StaticImage
                   src='https://res.cloudinary.com/di4ms4xaz/image/upload/v1778347567/amp5o71nxwhwr2znzjb1.jpg'
