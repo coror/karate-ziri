@@ -5,6 +5,5 @@ import '@fontsource/oswald/500.css';
 import '@fontsource/oswald/600.css';
 import '@fontsource/oswald/700.css';
 
-// SW/cache cleanup is handled earlier by the inline script in gatsby-ssr.js
-// (runs before React loads, so it can reload before hydration). No work needed
-// here.
+// SW/cache cleanup is handled by static/sw.js itself (silent self-unregister
+// in its activate event). No JS-side cleanup needed.
